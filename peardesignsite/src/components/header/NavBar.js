@@ -11,7 +11,7 @@ export class NavBar extends Component {
     const pages = ['about', 'services', 'work', 'contact'];
     const navLinks = pages.map(page => {
       return (
-        <a href={'/' + page} className="NavBar__links">
+        <a href={'#' + page} className="NavBar__links">
           {page}
         </a>
       )

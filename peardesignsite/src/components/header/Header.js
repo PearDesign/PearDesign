@@ -7,10 +7,9 @@ export class Header extends Component {
     return (
       <div className="Header">
         <NavBar />
-        <h1>
+        <h1 className="Header__headline">
           Pear Design is a full-service agency of developers, designers, and digital storytellers.
         </h1>
-
       </div>
     );
   }

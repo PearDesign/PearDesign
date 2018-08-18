@@ -1,4 +1,8 @@
+@import '../styles/colors.scss';
+
 .NavBar {
+  width: 100%;
+  align-self: flex-start;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,5 +15,5 @@
 }
 .NavBar__links {
   padding: 20px;
-  color: #323d4c;
+  color: $blue;
 }

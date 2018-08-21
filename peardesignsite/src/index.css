@@ -1,8 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'SofiaMed', sans-serif;
   color: #323d4c;
+  text-align: center;
 }
 a {
   color: inherit;

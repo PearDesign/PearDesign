@@ -1,0 +1,9 @@
+@import "./styles/index.css";
+
+.App{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-start;
+}

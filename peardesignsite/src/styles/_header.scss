@@ -1,0 +1,16 @@
+.Header{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1330px;
+  height: 80vh;
+  max-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background: $white;
+  align-content: center;
+}
+.Home__Hero{
+  align-self: stretch;
+  padding: 20px;
+  width: 100%;
+}

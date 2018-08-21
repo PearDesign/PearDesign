@@ -1,0 +1,103 @@
+button {
+  background: 0;
+  box-shadow: 0;
+  border: 0; }
+
+.button__hire--nav {
+  border-radius: 2em;
+  padding: 0.5em 1.5em;
+  border: 2px solid red; }
+
+@font-face {
+  src: url(../assets/fonts/SofiaProMedium.otf);
+  font-family: "SofiaMed"; }
+
+.Header {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1330px;
+  height: 80vh;
+  max-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  align-content: center; }
+
+.Home__Hero {
+  align-self: stretch;
+  padding: 20px;
+  width: 100%; }
+
+.Home {
+  width: 100%;
+  margin: 0 auto; }
+
+.Home__Services {
+  width: 100%;
+  padding: 30px 0;
+  background: #f9461c; }
+
+.Home__Projects {
+  width: 100%;
+  padding: 30px 0; }
+
+.Home__ProjectsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1330px; }
+
+.ProjectTile {
+  width: calc(50% - 80px);
+  text-align: left;
+  margin: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap; }
+
+.ProjectTile__imgLink {
+  width: 100%; }
+
+.ProjectTile__img {
+  width: 100%;
+  object-fit: cover; }
+
+.ProjectTile__title {
+  width: 100%; }
+
+.ProjectTile__tag {
+  width: 100%;
+  margin: 0; }
+
+.NavBar {
+  margin: 0 auto;
+  max-width: 1330px;
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.NavBar__logo {
+  max-width: 200px; }
+
+.NavBar__links {
+  color: #323d4c;
+  text-transform: uppercase;
+  margin: 0 20px;
+  background: 0;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  font-weight: bold; }
+
+.NavBar__links:hover {
+  text-transform: uppercase;
+  opacity: 1; }
+
+.Footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0; }

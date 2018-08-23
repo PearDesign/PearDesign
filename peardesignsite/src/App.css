@@ -6,4 +6,5 @@
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: flex-start;
+  background-image: linear-gradient(to bottom, #fafaff, #fff);
 }

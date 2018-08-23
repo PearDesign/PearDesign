@@ -2,10 +2,24 @@ button{
   background: 0;
   box-shadow: 0;
   border: 0;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .button__hire--nav{
+  margin: 0 10px;
   border-radius: 2em;
-  padding: 0.5em 1.5em;
-  border: 2px solid red;
+  padding: 0.85em 1.65em 0.5em;
+  border: 0.2em solid $blue;
+  font-size: 0.8em;
+}
+.button__work--header{
+  margin: 30px auto;
+  padding: 18px 30px 14px;
+  line-height: 20px;
+  border-radius: 2em;
+  letter-spacing: 1.5px;
+  box-shadow: 0 15px 40px 0 rgba(0,0,0,0.15);
+  background: $blue;
+  color: $white;
 }

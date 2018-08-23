@@ -6,11 +6,17 @@
   max-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background: $white;
   align-content: center;
 }
-.Home__Hero{
-  align-self: stretch;
+.Home__hero{
   padding: 20px;
   width: 100%;
+}
+.Home__heroHeadline{
+  margin: 0 0 30px;
+}
+.Home__heroText{
+  font-size: 22px;
+  line-height: 1.55;
+  color: $text;
 }

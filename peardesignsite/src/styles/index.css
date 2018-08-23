@@ -1,12 +1,26 @@
 button {
   background: 0;
   box-shadow: 0;
-  border: 0; }
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold; }
 
 .button__hire--nav {
+  margin: 0 10px;
   border-radius: 2em;
-  padding: 0.5em 1.5em;
-  border: 2px solid red; }
+  padding: 0.85em 1.65em 0.5em;
+  border: 0.2em solid #323d4c;
+  font-size: 0.8em; }
+
+.button__work--header {
+  margin: 30px auto;
+  padding: 18px 30px 14px;
+  line-height: 20px;
+  border-radius: 2em;
+  letter-spacing: 1.5px;
+  box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.15);
+  background: #323d4c;
+  color: #fff; }
 
 @font-face {
   src: url(../assets/fonts/SofiaProMedium.otf);
@@ -20,13 +34,19 @@ button {
   max-height: 100vh;
   display: flex;
   flex-wrap: wrap;
-  background: #fff;
   align-content: center; }
 
-.Home__Hero {
-  align-self: stretch;
+.Home__hero {
   padding: 20px;
   width: 100%; }
+
+.Home__heroHeadline {
+  margin: 0 0 30px; }
+
+.Home__heroText {
+  font-size: 22px;
+  line-height: 1.55;
+  color: #615f70; }
 
 .Home {
   width: 100%;
@@ -73,6 +93,8 @@ button {
 
 .NavBar {
   margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
   max-width: 1330px;
   width: 100%;
   align-self: flex-start;

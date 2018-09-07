@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Lato';
+  src: url('./assets/fonts/Lato/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('./assets/fonts/Lato/Lato-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Arbutus';
+  src: url('./assets/fonts/Arbutus_Slab/ArbutusSlab-Regular.ttf');
+}
+
+$serif: 'Arbutus', serif;
+$sans: 'Lato', sans-serif;
+$sanslight: 'Lato-Light', sans-serif;
+
+
+h1 {
+  font-family: $serif;
+  font-size: 54px;
+  text-rendering: optimizeLegibility;
+  color: $black;
+}
+h2{
+  font-family: $serif;
+  color: $black;
+
+}
+h3{
+  font-family: $serif;
+  color: $black;
+
+}
+h4{
+  font-family: $serif;
+  color: $black;
+  
+}
+h5{
+  font-family: $serif;
+}
+h6{
+  font-family: $serif;
+}
+p{
+  font-family: $sans;
+}

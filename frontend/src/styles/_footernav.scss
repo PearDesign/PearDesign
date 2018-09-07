@@ -1,0 +1,14 @@
+.FooterNav{
+  display: flex;
+  align-items: flex-end;
+}
+.FooterNav__Left{
+  width: 50%;
+  padding-top: 148px;
+  background: $offwhite;
+}
+.FooterNav__Right{
+  width: 50%;
+  padding-top: 192px;
+  background: $offwhite;
+}

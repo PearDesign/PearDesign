@@ -1,0 +1,25 @@
+.Nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+.Nav__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Nav__links{
+  display: flex;
+
+}
+.Nav__link{
+  color: $white;
+  padding-left: 60px;
+  font-family: $sans;
+}

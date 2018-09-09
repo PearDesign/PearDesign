@@ -86,8 +86,18 @@ a {
   flex-direction: column;
   max-width: 960px;
   z-index: 10;
-  position: relative;
-  min-height: 1000px; }
+  position: relative; }
+
+.Sidetext {
+  color: #ffffff;
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  margin-left: -5vw;
+  margin-top: 240px;
+  position: absolute; }
 
 .Home__headline {
   color: #ffffff; }
@@ -105,7 +115,13 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: 100%; }
+  width: 100%;
+  max-width: 960px;
+  margin: -40px auto 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 11;
+  position: relative; }
 
 .Features__Tile--left {
   width: calc(50% - 20px);
@@ -193,8 +209,7 @@ a {
   padding: 60px 0; }
 
 .Service {
-  width: calc(25% - 40px);
-  height: 200px;
+  width: calc(33% - 40px);
   background: #F8F8FF;
   align-items: center;
   margin: 20px;
@@ -202,8 +217,8 @@ a {
   text-align: center; }
 
 .Service__Icon {
-  width: 48px;
-  height: 48px; }
+  width: 64px;
+  height: 64px; }
 
 .Service__Label {
   font-family: "Lato", sans-serif; }
@@ -221,4 +236,17 @@ a {
 
 .Testimonials__Quote {
   font-size: 24px;
-  line-height: 1.6; }
+  line-height: 1.6;
+  color: #000021; }
+
+.Testimonials__Quote::before {
+  content: url("./assets/shapes/quote.svg");
+  position: relative;
+  margin-left: -200px; }
+
+.Testimonials__Quote::after {
+  content: '"'; }
+
+.Testimonials__Attribution {
+  color: #666666;
+  padding: 20px 0; }

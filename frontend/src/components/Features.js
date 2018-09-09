@@ -8,12 +8,12 @@ export class Features extends Component {
           <div className="Features__Image">
           </div>
           <h2 className="Features__Title">Custom Web Development</h2>
-          <a href="#" className="Features__link"><span>Featured Project: Happy Active Family</span></a>
+          <a href="" className="Features__link"><span>Featured Project: Happy Active Family</span></a>
         </div>
         <div className="Features__Tile--right">
           <div className="Features__Image"></div>
           <h2 className="Features__Title">Digital Product Design</h2>
-          <a href="#" className="Features__link"><span>Featured Project: Mari for Michigan</span></a>
+          <a href="" className="Features__link"><span>Featured Project: Mari for Michigan</span></a>
         </div>
       </div>
     );

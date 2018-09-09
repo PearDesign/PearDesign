@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
-import { Pear } from './Pear'
 
 export class Service extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      img: null,
+      label: null,
+    };
+  }
   render(){
     return(
       <div className="Service">
-        <Pear />
-        <p className="Service__Label">Label</p>
+        <img src={this.props.img} alt="" className="Service__Icon"/>
+        <p className="Service__Label">{this.props.label}</p>
       </div>
     );
   }

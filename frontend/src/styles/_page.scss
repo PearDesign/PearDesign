@@ -7,5 +7,15 @@
   max-width: 960px;
   z-index: 10;
   position: relative;
-  min-height: 1000px;
+}
+.Sidetext{
+  color: $white;
+  transform: rotate(90deg);
+  transform-origin: left top 0;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-family: $sans;
+  margin-left: -5vw;
+  margin-top: 240px;
+  position: absolute;
 }

@@ -15,7 +15,17 @@
 .Testimonials__Quote{
   font-size: 24px;
   line-height: 1.6;
+  color: $black;
+}
+.Testimonials__Quote::before{
+  content: url("./assets/shapes/quote.svg");
+  position: relative;
+  margin-left: -200px;
+}
+.Testimonials__Quote::after{
+  content: ("\"");
 }
 .Testimonials__Attribution{
-
+  color: $grey;
+  padding: 20px 0;
 }

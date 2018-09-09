@@ -5,8 +5,8 @@ export class Testimonials extends Component {
     return(
       <div className="Testimonials">
         <div className="Testimonials__Container">
-          <h2 className="Testimonials__Headline">Kind words from people we're proud to work with:</h2>
-          <p className="Testimonials__Quote">Testimonial quote</p>
+          <h2 className="Testimonials__Headline">Kind words from people we've peared with:</h2>
+          <p className="Testimonials__Quote">This is a complimentary quote from a client to show they were really happy with the services provided. It would go on for three to four sentences, which we can ask nicely for them to provide. But we can launch the site without them initially.</p>
           <p className="Testimonials__Attribution">- Firstname Lastname, Position at Company Company</p>
         </div>
       </div>

@@ -18,6 +18,10 @@ $sans: 'Lato', sans-serif;
 $sanslight: 'Lato-Light', sans-serif;
 
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
 h1 {
   font-family: $serif;
   font-size: 54px;
@@ -27,7 +31,8 @@ h1 {
 h2{
   font-family: $serif;
   color: $black;
-
+  font-size: 30px;
+  line-height: 1.6;
 }
 h3{
   font-family: $serif;
@@ -37,7 +42,7 @@ h3{
 h4{
   font-family: $serif;
   color: $black;
-  
+
 }
 h5{
   font-family: $serif;

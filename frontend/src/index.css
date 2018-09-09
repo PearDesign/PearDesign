@@ -10,6 +10,9 @@
   font-family: 'Arbutus';
   src: url("./assets/fonts/Arbutus_Slab/ArbutusSlab-Regular.ttf"); }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
 h1 {
   font-family: "Arbutus", serif;
   font-size: 54px;
@@ -18,7 +21,9 @@ h1 {
 
 h2 {
   font-family: "Arbutus", serif;
-  color: #000021; }
+  color: #000021;
+  font-size: 30px;
+  line-height: 1.6; }
 
 h3 {
   font-family: "Arbutus", serif;
@@ -116,7 +121,9 @@ a {
   object-fit: cover;
   padding-top: 480px;
   width: 100%;
-  background: #6788FF; }
+  background: #6788FF;
+  background-position: center;
+  background-size: cover; }
 
 .Features__Title {
   margin: 36px 0 28px;
@@ -161,12 +168,14 @@ a {
 .FooterNav__Left {
   width: 50%;
   padding-top: 148px;
-  background: #F8F8FF; }
+  background: #6788FF;
+  object-fit: cover; }
 
 .FooterNav__Right {
   width: 50%;
   padding-top: 192px;
-  background: #F8F8FF; }
+  background: #6788FF;
+  object-fit: cover; }
 
 .Services {
   margin: 40px auto;
@@ -174,6 +183,14 @@ a {
   width: 100%;
   display: flex;
   flex-wrap: wrap; }
+
+.Services__HeadlineContainer {
+  width: 100%; }
+
+.Services__Headline {
+  max-width: 688px;
+  margin: 0 auto;
+  padding: 60px 0; }
 
 .Service {
   width: calc(25% - 40px);
@@ -190,3 +207,18 @@ a {
 
 .Service__Label {
   font-family: "Lato", sans-serif; }
+
+.Testimonials {
+  background: #F8F8FF;
+  width: 100%;
+  margin: 60px 0; }
+
+.Testimonials__Container {
+  max-width: 688px;
+  margin: 0 auto;
+  padding: 80px 0;
+  box-sizing: border-box; }
+
+.Testimonials__Quote {
+  font-size: 24px;
+  line-height: 1.6; }

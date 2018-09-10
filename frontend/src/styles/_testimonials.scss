@@ -6,7 +6,7 @@
 .Testimonials__Container{
   max-width: 688px;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 80px 20px;
   box-sizing: border-box;
 }
 .Testimonials__Headline{
@@ -17,10 +17,11 @@
   line-height: 1.6;
   color: $black;
 }
-.Testimonials__Quote::before{
+.Testimonials__Container span::before{
   content: url("./assets/shapes/quote.svg");
-  position: relative;
-  margin-left: -200px;
+  position: absolute;
+  margin-left: -130px;
+  margin-bottom: -40px;
 }
 .Testimonials__Quote::after{
   content: ("\"");

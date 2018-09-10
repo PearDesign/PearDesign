@@ -4,7 +4,7 @@
     flex-wrap: nowrap;
     width: 100%;
     max-width: 960px;
-    margin: -40px auto 0;
+    margin: 0px auto 0;
     padding: 0 20px;
     box-sizing: border-box;
     z-index: 11;
@@ -39,6 +39,9 @@
 .Features__link span {
   border-bottom: 0.5px solid $black;
   padding-bottom: 16px;
+}
+.Features__link span::before {
+  content: ("Featured Project: ");
 }
 .Features__link::before{
   content: url(./assets/shapes/triangle.svg);

@@ -29,7 +29,7 @@ export class Services extends Component {
           label="Technical Consulting"
         />
         <Service
-          img="../assets/icons/icon_cloud.svg"
+          img=""
           label="Hosting"
         />
 

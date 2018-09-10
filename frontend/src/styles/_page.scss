@@ -1,6 +1,6 @@
 .PageTop{
   margin: 0 auto;
-  padding: 14vw 20px 0;
+  padding: 14vw 20px 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -8,14 +8,22 @@
   z-index: 10;
   position: relative;
 }
+.Page__headline{
+  color: $white;
+}
 .Sidetext{
   color: $white;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
   transform-origin: left top 0;
   letter-spacing: 7px;
   text-transform: uppercase;
   font-family: $sans;
-  margin-left: -5vw;
-  margin-top: 240px;
+  font-weight: 200;
+  margin-left: -6vw;
+  margin-top: 480px;
   position: absolute;
+}
+.Sidetext::after{
+
+
 }

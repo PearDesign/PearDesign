@@ -1,12 +1,18 @@
-.Home__headline{
-  color: $white;
+.Home{
+  width: 100%;
+  margin: 0px auto 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 11;
+  position: relative;
 }
 .Home_subheadline{
   color: $white;
   font-size: 22px;
   font-family: $sans;
-  max-width: 75%;
+  max-width: 960px;
   line-height: 1.8;
-  margin: 30px 0;
-  padding: 0;
+  margin: 0px auto 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }

@@ -1,0 +1,14 @@
+.Work{
+  display: flex;
+  background: $offwhite;
+  width: 960px;
+  height: 900px;
+  display: flex;
+  width: 100%;
+  max-width: 960px;
+  margin: -40px auto 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 11;
+  position: relative;
+}

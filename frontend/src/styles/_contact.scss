@@ -1,0 +1,73 @@
+.Contact {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: $container;
+  margin: 0px auto 0;
+  padding: 0px 0px;
+  box-sizing: border-box;
+  z-index: 11;
+  position: relative;
+}
+.Contact__SectionHeader{
+  width: 100%;
+}
+.How input[type=checkbox]:checked + label{
+  color: $blue;
+}
+.How {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  width: 100%;
+  padding: 0 0px;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
+.How input {
+  margin-right: 16px;
+}
+.How label {
+  width: calc(33% - 40px);
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: $sans;
+}
+.Size {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0px;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
+.Size label {
+  width: calc(25% - 40px);
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: $sans;
+}
+.Budget {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0px;
+  margin-bottom: 60px;
+  box-sizing: border-box;
+}
+.Budget label {
+  width: calc(25% - 40px);
+  padding: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: $sans;
+}
+.TellUs{
+  width: 100%;
+}
+.TellUs textarea {
+  width: 100%;
+  min-height: 160px;
+}

@@ -16,6 +16,16 @@
   box-sizing: border-box;
   min-height: 220px;
 }
+.Page__subheadline{
+  color: $white;
+  font-size: 22px;
+  font-family: $sans;
+  max-width: $container;
+  line-height: 1.8;
+  margin: 0px auto 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
 .Sidetext{
   color: $white;
   transform: rotate(-90deg);

@@ -6,11 +6,11 @@
   z-index: 11;
   position: relative;
 }
-.Home_subheadline{
+.Home__subheadline{
   color: $white;
   font-size: 22px;
   font-family: $sans;
-  max-width: 960px;
+  max-width: $container;
   line-height: 1.8;
   margin: 0px auto 30px;
   padding: 0 20px;

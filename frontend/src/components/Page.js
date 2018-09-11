@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { PageHome } from './PageHome';
 import { PageWork } from './PageWork';
+import { PageProject } from './PageProject';
+import { PageContact } from './PageContact';
 
 export class Page extends Component {
   constructor(props) {
@@ -12,12 +15,11 @@ export class Page extends Component {
 
   render() {
     return(
-      <div className="Page">
-        <div className="PageTop">
-          <h1 className="Page__headline">{this.state.headline}</h1>
+      <Router>
+        <div className="Page">
+          
         </div>
-        <PageHome />
-      </div>
+      </Router>
     );
   }
 }

@@ -1,4 +1,11 @@
+$container: 960px;
+
+.App {
+  overflow: hidden;
+}
+
 a {
   text-transform: none;
   text-decoration: none;
+  color: inherit;
 }

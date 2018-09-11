@@ -1,6 +1,8 @@
 .FooterNav{
+  background: $offwhite;
   display: flex;
   align-items: flex-end;
+  padding-top: 30px;
 }
 .FooterNav__Left{
   width: 50%;

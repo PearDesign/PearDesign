@@ -1,31 +1,29 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { LogoText } from './LogoText'
 
 export class Nav extends Component {
   render() {
-
-    function goToPage(e) {
-      e.preventDefault();
-      console.log('The link was clicked.');
-    }
-    const pages = ['About', 'Work', 'Contact'];
+    const pages = ['Work', 'Contact'];
     const navLinks = pages.map(page => {
       return (
-        <a href={'/' + page} className="Nav__link" onClick={goToPage}>
-          {page}
-        </a>
+        <li className="Nav__link">
+          <Link to={"/" + page}>{page}</Link>
+        </li>
       )
     });
 
     return(
       <nav className="Nav">
         <div className="Nav__logo">
-          <LogoText />
+          <Link to={"/"}><LogoText /></Link>
         </div>
         <div className="Nav__links">
-          {navLinks}
+            <ul>
+              {navLinks}
+            </ul>
         </div>
-      </ nav>
+      </nav>
     );
   }
 }

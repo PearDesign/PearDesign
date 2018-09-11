@@ -1,15 +1,20 @@
-.PageTop{
+.Page{
   margin: 0 auto;
-  padding: 14vw 20px 10px;
+  padding: 0 0px 0px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  max-width: 960px;
   z-index: 10;
   position: relative;
 }
 .Page__headline{
   color: $white;
+  width: 100%;
+  max-width: $container;
+  margin: 0 auto;
+  padding: 60px 20px 60px;
+  box-sizing: border-box;
+  min-height: 220px;
 }
 .Sidetext{
   color: $white;

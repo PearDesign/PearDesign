@@ -1,14 +1,42 @@
 .Work{
   display: flex;
-  background: $offwhite;
-  width: 960px;
-  height: 900px;
-  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 100%;
-  max-width: 960px;
-  margin: -40px auto 0;
-  padding: 0 20px;
+  max-width: $container;
+  margin: 0px auto 0;
+  padding: 0px 0px;
   box-sizing: border-box;
   z-index: 11;
   position: relative;
+}
+.Grid_1{
+  margin: 20px;
+  height: 377px;
+  background: blue;
+  width: calc(66.5% - 40px);
+}
+.Grid_2{
+  margin: 20px;
+  height: 377px;
+  width: calc(33.5% - 40px);
+  background: red;
+}
+.Grid_3{
+  margin: 20px;
+  background: green;
+  width: calc(40% - 40px);
+  height: 216px;
+}
+.Grid_4{
+  margin: 20px;
+  background: purple;
+  width: calc(40% - 40px);
+  height: 611px;
+}
+.Grid_5{
+  margin: 20px;
+  background: purple;
+  height: 872px;
+  width: calc(60% - 40px);
 }

@@ -1,12 +1,31 @@
+// import axios
 import React, { Component } from 'react';
 
 export class PageContact extends Component {
+  constructor(props){
+    super(props);
+    this.state = {}
+  }
+
+  handleIsStartupChange(e){
+    e.preventDefault();
+    this.setState({
+      'isStartup': true,
+    })
+  }
+  handleFormSubmission(e) {
+    e.preventDefault();
+    let data = this.state;
+    // axios.post('/randomapiendpoint/', data=data)
+    console.log("Here's the data!");
+    console.log(data);
+  }
   render() {
     return(
       <div className="Contact">
         <h1 className="Page__headline">Pear with us</h1>
         <p className="Page__subheadline">Here’s where some contact page copy would go. I haven’t finished it, but think it should maybe be two lines. How can we help?</p>
-        <form name="contact" method="post">
+        <form name="contact" method="post" onSubmit={this.handleFormSubmission.bind(this)}>
           <input type="hidden" name="form-name" value="contact" />
           <div className="How">
             <label><input type="checkbox" name="development"/>Web Development</label>
@@ -25,7 +44,7 @@ export class PageContact extends Component {
           </div>
           <div className="Size">
             <h2 className="Contact__SectionHeader">Company size</h2>
-            <label><input type="checkbox" name="startup"/>Startup</label>
+            <label><input type="checkbox" name="startup" onChange={this.handleIsStartupChange.bind(this)}/>Startup</label>
             <label><input type="checkbox" name="smallbusiness"/> Small Business</label>
             <label><input type="checkbox" name="enterprise"/> Enterprise</label>
             <label><input type="checkbox" name="nonprofit"/> Non-Profit</label>

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import { Header } from './components/Header';
 import { Nav } from './components/Nav';
-import { LogoText } from './components/LogoText'
 import { PageHome } from './components/PageHome';
 import { PageWork } from './components/PageWork';
 import { PageContact } from './components/PageContact';
@@ -15,18 +14,20 @@ class App extends Component {
   render() {
 
     return (
-      <Router>
+      <BrowserRouter>
         <div className="App">
           <Header />
           <Nav />
-          <Route exact path="/" component={ PageHome }/>
-          <Route path="/work" component={ PageWork }/>
-          <Route path="/contact" component={ PageContact }/>
-          <Route path="/project" component={ PageProject }/>
+          <Switch>
+            <Route exact path="/" component={ PageHome }/>
+            <Route path="/work" component={ PageWork }/>
+            <Route path="/contact" component={ PageContact }/>
+            <Route exact path="/project/:project_name/" component={ PageProject }/>
+          </Switch>
           <FooterNav />
           <Footer />
         </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }

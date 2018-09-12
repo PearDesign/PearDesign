@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { LogoText } from './LogoText'
 
 export class Nav extends Component {
@@ -7,7 +7,7 @@ export class Nav extends Component {
     const pages = ['Work', 'Contact'];
     const navLinks = pages.map(page => {
       return (
-        <li className="Nav__link">
+        <li className="Nav__link" key={page}>
           <Link to={"/" + page}>{page}</Link>
         </li>
       )

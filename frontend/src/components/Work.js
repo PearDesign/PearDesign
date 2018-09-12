@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-export class PageWork extends Component {
+export class Work extends Component {
   render(){
     return(
       <div className="Work">

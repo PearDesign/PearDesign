@@ -16,6 +16,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+.Project__Feature img {
+  width: 100%;
+  object-fit: contain;
+}
 .Feature__Bar {
   height: 1vw;
   background: #c4c4c4;
@@ -107,16 +111,22 @@
   box-sizing: border-box;
 }
 .MockMobile__Container{
-  max-width: 1024px;
+  max-width: 1100px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   padding: 120px 0;
 }
 .MockMobile{
-  width: calc(33% - 40px);
-  padding-top: 50%;
-  background: $black;
+  width: 335px;
+  height: 597px;
+  // Temp
+  box-shadow: inset 0 0 10px #0f0;
+}
+.MockMobile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .Project__WriteUp{
   margin: 120px auto;

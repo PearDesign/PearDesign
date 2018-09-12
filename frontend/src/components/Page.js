@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { PageHome } from './PageHome';
-import { PageWork } from './PageWork';
-import { PageProject } from './PageProject';
-import { PageContact } from './PageContact';
+import { Home } from './Home';
+import { Work } from './Work';
+import { Project } from './Project';
+import { Contact } from './Contact';
 
 export class Page extends Component {
   constructor(props) {
@@ -17,7 +17,7 @@ export class Page extends Component {
     return(
       <Router>
         <div className="Page">
-          
+
         </div>
       </Router>
     );

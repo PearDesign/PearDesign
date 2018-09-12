@@ -3,7 +3,7 @@ import { Features } from './Features';
 import { Services } from './Services';
 import { Testimonials } from './Testimonials';
 
-export class PageHome extends Component {
+export class Home extends Component {
   render(){
     return(
       <div className="Home">

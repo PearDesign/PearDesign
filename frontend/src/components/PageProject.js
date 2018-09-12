@@ -8,7 +8,6 @@ export class PageProject extends Component {
       <div className="Project">
         <h1 className="Page__headline">Project Title</h1>
         <div className="Project__Feature">
-          <MockDesktop />
         </div>
         <div className="Project__Intro">
           <div className="Project__SubHeadline">
@@ -30,7 +29,7 @@ export class PageProject extends Component {
           <MockDesktop />
           <MockDesktop />
           <MockDesktop />
-          
+
         </div>
         <div className="Project__WriteUp">
           <p className="Project__WriteUpText">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>

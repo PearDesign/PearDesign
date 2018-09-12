@@ -22,7 +22,7 @@ class App extends Component {
             <Route exact path="/" component={ Home }/>
             <Route path="/work" component={ Work }/>
             <Route path="/contact" component={ Contact }/>
-            <Route exact path="/project/:project_name/" component={ Project }/>
+            <Route path="/project/:project_name" component={ Project }/>
           </Switch>
           <FooterNav />
           <Footer />

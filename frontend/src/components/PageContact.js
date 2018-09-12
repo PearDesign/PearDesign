@@ -17,7 +17,7 @@ export class PageContact extends Component {
             <label><input type="checkbox" name="webdev"/>Web Hosting</label>
           </div>
           <div className="AboutYou">
-            <h2 className="Contact__SectionHeader"></h2>
+            <h2 className="Contact__SectionHeader">Tell Us About Yourself</h2>
             <label>Name <input type="text" name="name"/></label>
             <label>Company <input type="text" name="company"/></label>
             <label>Email <input type="email" name="email"/></label>

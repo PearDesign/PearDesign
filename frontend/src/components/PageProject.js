@@ -3,10 +3,26 @@ import { MockDesktop } from './MockDesktop';
 
 export class PageProject extends Component {
   // NOTE: THIS NEEDS A CONSTRUCTOR
+  constructor(props) {
+    super(props);
+    const projects = {
+      'haf': {
+        'name': 'Happy Active Family',
+      },
+      'mari4mi': {
+        'client': 'Mari Manoogian',
+        'name': 'Mari For MI',
+      }
+    }
+
+    this.state = {
+      'project': projects[props.match.params.project_name],
+    }
+  }
   render(){
     return(
       <div className="Project">
-        <h1 className="Page__headline">Project Title</h1>
+        <h1 className="Page__headline">{this.state.project.name} produced for {this.state.project.client}</h1>
         <div className="Project__Feature">
           <MockDesktop />
         </div>

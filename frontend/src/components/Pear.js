@@ -9,12 +9,12 @@ export class Pear extends Component {
         <path d="M42.6186 6.27671C43.3625 7.02738 33.6184 10.4266 27.1156 11.9872C16.5726 14.5174 15.0848 9.26273 15.0848 9.26273C13.5971 4.75871 18.0702 -0.135199 28.6371 0.930726C36.4021 1.71401 42.6186 6.27671 42.6186 6.27671Z" fill="url(#paint1_linear)"/>
         <defs>
         <linearGradient id="paint0_linear" x1="59.9309" y1="10.3699" x2="-4.91295" y2="50.6855" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#219653"/>
-        <stop offset="0.696133" stop-color="#FFCD34"/>
+        <stop stopColor="#219653"/>
+        <stop offset="0.696133" stopColor="#FFCD34"/>
         </linearGradient>
         <linearGradient id="paint1_linear" x1="59.9309" y1="10.3699" x2="-4.91295" y2="50.6855" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#219653"/>
-        <stop offset="0.696133" stop-color="#FFCD34"/>
+        <stop stopColor="#219653"/>
+        <stop offset="0.696133" stopColor="#FFCD34"/>
         </linearGradient>
         </defs>
         </svg>

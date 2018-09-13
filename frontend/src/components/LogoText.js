@@ -10,12 +10,12 @@ export class LogoText extends Component {
         <path d="M32.0067 7.5111C32.5067 8.0111 25.9572 10.2752 21.5864 11.3147C14.4999 13 13.4999 9.5 13.4999 9.5C12.4999 6.5 15.5065 3.24031 22.609 3.95029C27.8282 4.47201 32.0067 7.5111 32.0067 7.5111Z" fill="url(#paint1_linear)"/>
         <defs>
         <linearGradient id="paint0_linear" x1="43.643" y1="10.2374" x2="0.280008" y2="37.4435" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#219653"/>
-        <stop offset="0.696133" stop-color="#FFCD34"/>
+        <stop stopColor="#219653"/>
+        <stop offset="0.696133" stopColor="#FFCD34"/>
         </linearGradient>
         <linearGradient id="paint1_linear" x1="43.643" y1="10.2374" x2="0.280008" y2="37.4435" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#219653"/>
-        <stop offset="0.696133" stop-color="#FFCD34"/>
+        <stop stopColor="#219653"/>
+        <stop offset="0.696133" stopColor="#FFCD34"/>
         </linearGradient>
         </defs>
         </svg>

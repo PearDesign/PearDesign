@@ -9,11 +9,11 @@ export class Project extends Component {
     const projects = {
       'haf': {
         'name': 'Happy Active Family',
-        'featuredImage': 'http://placecage.com/800/400',
+        'featuredImage': 'http://placecage.com/920/540',
         'subheadline': '',
         'introtext': '',
         'services': ['Web Development', 'UI / UX Design', 'Brand Identity', 'Web Hosting'],
-        'desktopmocks': ['http://placecage.com/800/400'],
+        'desktopmocks': ['http://placecage.com/920/540'],
         'mobilemocks': ['http://placecage.com/800/400', 'http://placecage.com/800/400', 'http://placecage.com/800/400'],
         'writeup_p1': '',
         'writeup_p2': '',
@@ -22,11 +22,11 @@ export class Project extends Component {
       },
       'mari': {
         'name': 'Mari For MI',
-        'featuredImage': 'http://placecage.com/800/400',
+        'featuredImage': 'http://placecage.com/920/540',
         'subheadline': '',
         'introtext': '',
         'services': ['Web Development', 'UI / UX Design', 'Brand Identity', 'Web Hosting'],
-        'desktopmocks': ['http://placecage.com/800/400'],
+        'desktopmocks': ['http://placecage.com/920/540'],
         'mobilemocks': ['http://placecage.com/800/400', 'http://placecage.com/800/400', 'http://placecage.com/800/400'],
         'writeup_p1': '',
         'writeup_p2': '',

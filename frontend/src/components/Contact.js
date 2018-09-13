@@ -5,7 +5,18 @@ import React, { Component } from 'react';
 export class Contact extends Component {
   constructor(props){
     super(props);
-    this.state = {}
+    this.state = {value: ''};
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value})
+  }
+
+  handleSubmit(event) {
+    alert('submitted');
+    event.preventDefault();
   }
 
   handleIsStartupChange(e){
@@ -45,17 +56,17 @@ export class Contact extends Component {
           </div>
           <div className="Size">
             <h2 className="Contact__SectionHeader">Company size</h2>
-            <label><input type="checkbox" name="startup" onChange={this.handleIsStartupChange.bind(this)}/>Startup</label>
-            <label><input type="checkbox" name="smallbusiness"/> Small Business</label>
-            <label><input type="checkbox" name="enterprise"/> Enterprise</label>
-            <label><input type="checkbox" name="nonprofit"/> Non-Profit</label>
+            <label><input type="radio" name="startup" onChange={this.handleIsStartupChange.bind(this)}/>Startup</label>
+            <label><input type="radio" name="smallbusiness"/> Small Business</label>
+            <label><input type="radio" name="enterprise"/> Enterprise</label>
+            <label><input type="radio" name="nonprofit"/> Non-Profit</label>
           </div>
           <div className="Budget">
             <h2 className="Contact__SectionHeader">Estimated Budget</h2>
             <label><input type="checkbox" name="small"/>$3k</label>
             <label><input type="checkbox" name="med"/> $3k - $5k</label>
             <label><input type="checkbox" name="large"/> $5k - $10k</label>
-            <label><input type="checkbox" name="talk"/> Let's Talk</label>
+            <label><input type="checkbox" name="talk"/> Lets Talk</label>
           </div>
           <div className="TellUs">
             <h2>Tell us about your project</h2>

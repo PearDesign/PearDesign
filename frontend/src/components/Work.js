@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import projects from '../projectdata';
 
 export class Work extends Component {
   render(){
@@ -7,7 +8,8 @@ export class Work extends Component {
       <div className="Work">
         <h1 className="Page__headline">Our work:</h1>
         <div className="Grid__Top">
-          <Link to="/project" className="Grid__Tile--1">
+          <Link to={projects.haf.url} className="Grid__Tile--1">
+            <img src={projects.haf.featuredImage} alt=""/>
           </Link>
           <Link to="/project" className="Grid__Tile--2">
           </Link>

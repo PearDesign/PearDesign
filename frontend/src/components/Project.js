@@ -1,39 +1,11 @@
 import React, { Component } from 'react';
 import { MockDesktop } from './MockDesktop';
 import { MockBar } from './FeatureBar';
+import projects from '../projectdata'
 
 export class Project extends Component {
-  // NOTE: THIS NEEDS A CONSTRUCTOR
   constructor(props) {
     super(props);
-    const projects = {
-      'haf': {
-        'name': 'Happy Active Family',
-        'featuredImage': 'http://placecage.com/800/400',
-        'subheadline': '',
-        'introtext': '',
-        'services': ['Web Development', 'UI / UX Design', 'Brand Identity', 'Web Hosting'],
-        'desktopmocks': ['http://placecage.com/800/400'],
-        'mobilemocks': ['http://placecage.com/800/400', 'http://placecage.com/800/400', 'http://placecage.com/800/400'],
-        'writeup_p1': '',
-        'writeup_p2': '',
-        'testimonial': '',
-        'attrib': '',
-      },
-      'mari': {
-        'name': 'Mari For MI',
-        'featuredImage': 'http://placecage.com/800/400',
-        'subheadline': '',
-        'introtext': '',
-        'services': ['Web Development', 'UI / UX Design', 'Brand Identity', 'Web Hosting'],
-        'desktopmocks': ['http://placecage.com/800/400'],
-        'mobilemocks': ['http://placecage.com/800/400', 'http://placecage.com/800/400', 'http://placecage.com/800/400'],
-        'writeup_p1': '',
-        'writeup_p2': '',
-        'testimonial': '',
-        'attrib': '',
-      }
-    }
 
     this.state = {
       'project': projects[props.match.params.project_name],
@@ -69,9 +41,15 @@ export class Project extends Component {
           <MockDesktop
             backgroundImage={'url('+this.state.project.desktopmocks[0]+')'}
           />
-          <MockDesktop />
-          <MockDesktop />
-          <MockDesktop />
+          <MockDesktop
+            backgroundImage={'url('+this.state.project.desktopmocks[1]+')'}
+          />
+          <MockDesktop
+            backgroundImage={'url('+this.state.project.desktopmocks[2]+')'}
+          />
+          <MockDesktop
+            backgroundImage={'url('+this.state.project.desktopmocks[3]+')'}
+          />
 
         </div>
         <div className="Project__WriteUp">

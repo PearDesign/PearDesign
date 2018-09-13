@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Service } from './Service'
+import { Service } from './Service';
+import webDevIcon from '../assets/icons/icon_webdev.png'
 
 export class Services extends Component {
   render(){
@@ -9,7 +10,7 @@ export class Services extends Component {
           <h2 className="Services__Headline">We started Pear Design because we love building things. Here is what we do best:</h2>
         </div>
         <Service
-          img=""
+          img={webDevIcon}
           label="Web Development"
         />
         <Service

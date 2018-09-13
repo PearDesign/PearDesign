@@ -1,7 +1,7 @@
 .Features{
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 960px;
     margin: 0px auto 0;
@@ -22,7 +22,7 @@
 }
 .Features__Image{
   object-fit: cover;
-  padding-top: 480px;
+  height: 480px;
   width: 100%;
   background: $blue;
   background-position: center;
@@ -48,4 +48,10 @@
   height: 24px;
   width: 24px;
   margin-right: 20px;
+}
+
+.WorkLink {
+  width: 100%;
+  margin: 60px auto 80px;
+  text-align: center;
 }

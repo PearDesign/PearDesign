@@ -19,10 +19,12 @@ class App extends Component {
           <Header />
           <Nav />
           <Switch>
+          <div className="Page">
             <Route exact path="/" component={ Home }/>
-            <Route path="/work" component={ Work }/>
+            <Route exact path="/work" component={ Work }/>
             <Route path="/contact" component={ Contact }/>
-            <Route exact path="/project/:project_name/" component={ Project }/>
+            <Route path="/work/:project_name" component={ Project }/>
+          </div>
           </Switch>
           <FooterNav />
           <Footer />

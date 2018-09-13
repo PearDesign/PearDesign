@@ -6,7 +6,7 @@ export class MockDesktop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      backgroundImage: '',
+      backgroundImage: props.backgroundImage,
     }
   }
 

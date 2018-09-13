@@ -11,7 +11,7 @@ export class Features extends Component {
           <h2 className="Features__Title">Custom Web Development</h2>
           <div href="" className="Features__link"><span>Happy Active Family</span></div>
         </Link>
-        <Link to='/project/mari4mi/' className="Features__Tile--right">
+        <Link to='/project/mari/' className="Features__Tile--right">
           <div className="Features__Image"></div>
           <h2 className="Features__Title">Digital Product Design</h2>
           <span>Mari for Michigan</span>

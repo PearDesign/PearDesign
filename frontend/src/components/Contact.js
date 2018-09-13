@@ -2,7 +2,7 @@
 // https://reactjs.org/docs/forms.html
 import React, { Component } from 'react';
 
-export class PageContact extends Component {
+export class Contact extends Component {
   constructor(props){
     super(props);
     this.state = {}

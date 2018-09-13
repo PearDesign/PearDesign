@@ -121,7 +121,10 @@
   width: 335px;
   height: 597px;
   // Temp
-  box-shadow: inset 0 0 10px #0f0;
+  border: 1vw solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 3em;
+  overflow: hidden;
 }
 .MockMobile img {
   width: 100%;

@@ -8,20 +8,11 @@ export class Work extends Component {
       <div className="Work">
         <h1 className="Page__headline">Our work:</h1>
         <div className="Grid__Top">
-          <Link to={projects.haf.url} className="Grid__Tile--1">
+          <Link to={projects.haf.url} className="Grid__Tile">
             <img src={projects.haf.featuredImage} alt=""/>
           </Link>
-          <Link to="/project" className="Grid__Tile--2">
-          </Link>
-        </div>
-        <div className="Grid__Bottom--Left">
-          <Link to="/project" className="Grid__Tile--3">
-          </Link>
-          <Link to="/project" className="Grid__Tile--4">
-          </Link>
-        </div>
-        <div className="Grid__Bottom--Right">
-          <Link to="/project" className="Grid__Tile--5">
+          <Link to={projects.mari.url} className="Grid__Tile">
+            <img src={projects.haf.featuredImage} alt=""/>
           </Link>
         </div>
       </div>

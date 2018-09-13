@@ -11,10 +11,10 @@ export class Features extends Component {
           <h2 className="Features__Title">Custom Web Development</h2>
           <div href="" className="Features__link"><span>Happy Active Family</span></div>
         </Link>
-        <Link to='/project/mari/' className="Features__Tile--right">
+        <Link to={projects.mari.url} className="Features__Tile--right">
           <img className="Features__Image" src={projects.mari.featuredImage} alt=""/>
           <h2 className="Features__Title">Digital Product Design</h2>
-          <div href="" className="Features__link"><span>Mari for Michigan</span></div>
+          <div className="Features__link"><span>Mari for Michigan</span></div>
         </Link>
         <div className="WorkLink">
           <Link to='/' className="Button__Work--outline">

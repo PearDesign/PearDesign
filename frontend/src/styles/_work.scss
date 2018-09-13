@@ -15,6 +15,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.Grid__Tile{
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 0 3vw 0;
+}
+.Grid__Tile img {
+  width: 100%;
+}
+
+
+// KEEP FOR GRID
 .Grid__Bottom--Left{
   width: calc(40% - 40px);
   display: flex;

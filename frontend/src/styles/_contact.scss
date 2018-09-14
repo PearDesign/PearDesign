@@ -12,60 +12,96 @@
 .Contact__SectionHeader{
   width: 100%;
 }
-.How input[type=checkbox]:checked + label{
-  color: $blue;
-}
+
 .How {
   display: flex;
   flex-wrap: wrap;
   color: white;
   width: 100%;
-  padding: 0 0px;
+  padding: $page;
   margin-bottom: 60px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
+
 .How input {
   margin-right: 16px;
 }
 .How label {
   width: calc(33% - 40px);
-  padding: 20px;
+  padding: 20px 0;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 1.5px;
   font-family: $sans;
+}
+.input span.checkbox:hover {
+  cursor: pointer;
+}
+.checkbox::before{
+}
+.checkbox::before {
+  content: '';
+  padding-left: 20px;
+  border: 1.5px solid $white;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+
+.AboutYou{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  padding: $page;
+}
+.AboutYou input {
+  width: calc(50% - 20px);
+  margin: 20px 0;
+  font-family: $sans;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0,0,33,0.15);
 }
 .Size {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0px;
+  padding: $page;
   margin-bottom: 60px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 .Size label {
   width: calc(25% - 40px);
-  padding: 20px;
+  padding: 20px 0;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-family: $sans;
+  box-shadow: $test;
 }
 .Budget {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0px;
+  padding: $page;
   margin-bottom: 60px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 .Budget label {
   width: calc(25% - 40px);
-  padding: 20px;
+  padding: 20px 0;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-family: $sans;
+  box-shadow: $test;
 }
 .TellUs{
   width: 100%;
+  padding: $page;
 }
 .TellUs textarea {
   width: 100%;

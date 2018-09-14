@@ -23,7 +23,7 @@ export class Contact extends Component {
     this.setState({
       [input.name]: input.value
     })
-    console.log(input.value);
+    console.log(this.state);
   }
 
   handleSubmit(event) {
@@ -40,19 +40,22 @@ export class Contact extends Component {
         <form name="contact" method="post" onSubmit={this.handleSubmit.bind(this)}>
           <input type="hidden" name="form-name" value="contact" />
           <div className="How">
-            <label><input value="webdev" type="checkbox" name="how" checked="checked" onChange={this.handleChange.bind(this)}/>Web Development</label>
-            <label><input value="interface" type="checkbox" name="how" onChange={this.handleChange.bind(this)}/>Interface Design</label>
-            <label><input value="ux" type="checkbox" name="how" onChange={this.handleChange.bind(this)}/>User Experience</label>
-            <label><input value="brand" type="checkbox" name="how" onChange={this.handleChange.bind(this)}/>Brand Design</label>
-            <label><input value="consult" type="checkbox" name="how" onChange={this.handleChange.bind(this)}/>Tech Consulting</label>
-            <label><input value="host" type="checkbox" name="how" onChange={this.handleChange.bind(this)}/>Web Hosting</label>
+            <div className="input">
+              <input value="webdev" type="checkbox" name="webdev" checked={this.state.webdev} onChange={this.handleChange.bind(this)}/>
+              <label><span className="checkbox">Web Development</span></label>
+            </div>
+            <label><input value="interface" type="checkbox" name="interface" onChange={this.handleChange.bind(this)}/>Interface Design</label>
+            <label><input value="ux" type="checkbox" name="ux" onChange={this.handleChange.bind(this)}/>User Experience</label>
+            <label><input value="brand" type="checkbox" name="brand" onChange={this.handleChange.bind(this)}/>Brand Design</label>
+            <label><input value="consult" type="checkbox" name="consult" onChange={this.handleChange.bind(this)}/>Tech Consulting</label>
+            <label><input value="host" type="checkbox" name="host" onChange={this.handleChange.bind(this)}/>Web Hosting</label>
           </div>
           <div className="AboutYou">
             <h2 className="Contact__SectionHeader">Tell Us About Yourself</h2>
-            <label>Name <input type="text" name="name" onChange={this.handleChange.bind(this)}/></label>
-            <label>Company <input type="text" name="company" onChange={this.handleChange.bind(this)}/></label>
-            <label>Email <input type="email" name="email" onChange={this.handleChange.bind(this)}/></label>
-            <label>Phone <input type="phone" name="phone" onChange={this.handleChange.bind(this)}/></label>
+            <input placeholder="Name" type="text" name="name" onChange={this.handleChange.bind(this)}/>
+            <input placeholder="Company" type="text" name="company" onChange={this.handleChange.bind(this)}/>
+            <input placeholder="Email" type="email" name="email" onChange={this.handleChange.bind(this)}/>
+            <input placeholder="Phone" type="phone" name="phone" onChange={this.handleChange.bind(this)}/>
           </div>
           <div className="Size">
             <h2 className="Contact__SectionHeader">Company size</h2>

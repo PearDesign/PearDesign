@@ -1,0 +1,18 @@
+.FooterNav{
+  background: $offwhite;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 30px;
+}
+.FooterNav__Left{
+  width: 50%;
+  padding-top: 148px;
+  background: $blue;
+  object-fit: cover;
+}
+.FooterNav__Right{
+  width: 50%;
+  padding-top: 192px;
+  background: $blue;
+  object-fit: cover;
+}

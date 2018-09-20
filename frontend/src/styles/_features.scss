@@ -1,0 +1,57 @@
+.Features{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 960px;
+    margin: 0px auto 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 11;
+    position: relative;
+}
+.Features__Tile--left{
+  width: calc(50% - 20px);
+  height: auto;
+  margin: 60px 0;
+}
+.Features__Tile--right{
+  width: calc(50% - 20px);
+  height: auto;
+  margin: 120px 0;
+}
+.Features__Image{
+  object-fit: cover;
+  height: 480px;
+  width: 100%;
+  background: $blue;
+  background-position: center;
+  background-size: cover;
+}
+.Features__Title{
+  margin: 36px 0 28px;
+  font-size: 30px;
+}
+.Features__link{
+  font-family: $sans;
+  color: $black;
+}
+.Features__link span {
+  border-bottom: 0.5px solid $black;
+  padding-bottom: 16px;
+}
+.Features__link span::before {
+  content: ("Featured Project: ");
+}
+.Features__link::before{
+  content: url(./assets/shapes/triangle.svg);
+  height: 24px;
+  width: 24px;
+  margin-right: 20px;
+}
+
+.WorkLink {
+  width: 100%;
+  margin: 60px auto 80px;
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+.Page{
+  margin: 0 auto;
+  padding: 40px 0px 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  position: relative;
+}
+.Page__headline{
+  color: $white;
+  width: 100%;
+  max-width: $container;
+  margin: 0 auto;
+  padding: 60px 20px 60px;
+  box-sizing: border-box;
+  min-height: 220px;
+}
+.Page__subheadline{
+  color: $white;
+  font-size: 22px;
+  font-family: $sans;
+  max-width: $container;
+  line-height: 1.8;
+  margin: 0px auto 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.Sidetext{
+  color: $white;
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-family: $sans;
+  font-weight: 200;
+  margin-left: -6vw;
+  margin-top: 480px;
+  position: absolute;
+}
+.Sidetext::after{
+
+
+}

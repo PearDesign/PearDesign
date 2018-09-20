@@ -1,0 +1,20 @@
+.Service{
+  width: calc(33% - 40px);
+  margin: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+.Service__Icon{
+  max-height: 64px;
+  align-self: center;
+}
+.Service__Label{
+  font-family: $sans;
+  width: 100%;
+  color: $black;
+}

@@ -1,0 +1,15 @@
+.Header{
+  height: 56vw;
+  width: 100%;
+  background: $black;
+  display: flex;
+  position: absolute;
+  z-index: 0;
+  transform: skewY(-4.2deg);
+  overflow: hidden;
+  position: absolute;
+  margin-top: -100px;
+}
+.HeaderBg{
+
+}

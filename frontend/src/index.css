@@ -46,7 +46,11 @@ p {
   color: #615F70; }
 
 .App {
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
 
 a {
   text-transform: none;
@@ -78,7 +82,29 @@ a {
 .Contact__SectionHeader {
   width: 100%; }
 
-.How {
+.how input,
+.size input,
+.budget input {
+  display: none; }
+
+.how__input--selected {
+  width: calc(33% - 30px);
+  padding: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #6788FF; }
+
+.how__input--notselected {
+  width: calc(33% - 3vw);
+  padding: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold; }
+
+.how {
   display: flex;
   flex-wrap: wrap;
   color: white;
@@ -88,35 +114,38 @@ a {
   box-sizing: border-box;
   justify-content: space-between; }
 
-.How input {
+.how input {
   margin-right: 16px; }
 
-.How label {
-  width: calc(33% - 40px);
-  padding: 20px 0;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-family: "Lato", sans-serif; }
-
-.input span.checkbox:hover {
+.how__input--selected span.checkbox:hover,
+.how__input--notselected span.checkbox:hover {
   cursor: pointer; }
 
-.checkbox::before {
+.how__input--notselected span::before {
   content: '';
   padding-left: 20px;
-  border: 1.5px solid #ffffff;
+  border: 2px solid #ffffff;
   margin-right: 20px;
   box-sizing: border-box;
   border-radius: 100%; }
 
-.AboutYou {
+.how__input--selected span::before {
+  content: '';
+  padding-left: 20px;
+  border: 2px solid #6788FF;
+  background: #6788FF;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 100%; }
+
+.you {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   padding: 0 20px; }
 
-.AboutYou input {
+.you__input--notselected {
   width: calc(50% - 20px);
   margin: 20px 0;
   font-family: "Lato", sans-serif;
@@ -126,7 +155,17 @@ a {
   padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 33, 0.15); }
 
-.Size {
+.you__input--selected {
+  width: calc(50% - 20px);
+  margin: 20px 0;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #6788FF; }
+
+.size {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -135,15 +174,38 @@ a {
   box-sizing: border-box;
   justify-content: space-between; }
 
-.Size label {
-  width: calc(25% - 40px);
+.size label {
+  width: calc(25% - 5vw);
   padding: 20px 0;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-family: "Lato", sans-serif;
-  box-shadow: inset 0px 0px 3px #0f0; }
+  font-family: "Lato", sans-serif; }
 
-.Budget {
+.size input {
+  margin-right: 16px; }
+
+.size__input--selected span.checkbox:hover,
+.size__input--notselected span.checkbox:hover {
+  cursor: pointer; }
+
+.size__input--notselected span::before {
+  content: '';
+  padding-left: 20px;
+  border: 2px solid #6788FF;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 100%; }
+
+.size__input--selected span::before {
+  content: '';
+  padding-left: 20px;
+  border: 2px solid #6788FF;
+  background: #6788FF;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 100%; }
+
+.budget {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -152,19 +214,18 @@ a {
   box-sizing: border-box;
   justify-content: space-between; }
 
-.Budget label {
+.budget label {
   width: calc(25% - 40px);
   padding: 20px 0;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-family: "Lato", sans-serif;
-  box-shadow: inset 0px 0px 3px #0f0; }
+  font-family: "Lato", sans-serif; }
 
-.TellUs {
+.tell {
   width: 100%;
   padding: 0 20px; }
 
-.TellUs textarea {
+.tell textarea {
   width: 100%;
   min-height: 160px; }
 
@@ -228,7 +289,8 @@ a {
   padding: 80px 0 40px;
   background: #000021;
   width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  align-self: flex-end; }
 
 .Footer__Content {
   margin: 0 auto;
@@ -261,7 +323,8 @@ a {
   object-fit: cover; }
 
 .Header {
-  height: 56vw;
+  height: 48vw;
+  min-height: 760px;
   width: 100%;
   background: #000021;
   display: flex;
@@ -321,7 +384,8 @@ a {
   display: flex;
   flex-direction: column;
   z-index: 10;
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 .Page__headline {
   color: #ffffff;

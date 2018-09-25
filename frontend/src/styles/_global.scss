@@ -4,6 +4,10 @@ $test: inset 0px 0px 3px #0f0;
 
 .App {
   overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 a {

@@ -1,8 +1,10 @@
+import hafProfileImg from './assets/images/haf.jpg';
+
 const projects = {
   'haf': {
     'url': '/work/haf/',
     'name': 'Happy Active Family',
-    'featuredImage': 'http://placecage.com/800/400',
+    'featuredImage': hafProfileImg,
     'subheadline': '',
     'introtext': '',
     'services': ['Web Development', 'UI / UX Design', 'Brand Identity', 'Web Hosting'],

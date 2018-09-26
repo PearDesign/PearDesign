@@ -8,7 +8,7 @@ export class Nav extends Component {
     const navLinks = pages.map(page => {
       return (
         <li className="Nav__link" key={page}>
-          <Link to={"/" + page}>{page}</Link>
+          <Link to={"/" + page.toLowerCase()}>{page}</Link>
         </li>
       )
     });

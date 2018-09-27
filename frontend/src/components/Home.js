@@ -8,7 +8,7 @@ export class Home extends Component {
     return(
       <div className="Home">
         <h1 className="Page__headline">We are developers, designers, and digital storytellers.</h1>
-        <p className="Page__subheadline">Pear Design is a full-service digital product agency, helping our clients build beautiful products from the initial seed to last byte.</p>
+        <p className="Page__subheadline">Pear Design is a full-service digital agency, helping our clients build beautiful products from the initial seed to last byte.</p>
         <Features />
         <Services />
         <Testimonials />

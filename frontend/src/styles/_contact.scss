@@ -12,67 +12,167 @@
 .Contact__SectionHeader{
   width: 100%;
 }
-.How input[type=checkbox]:checked + label{
+
+.how input,
+.size input,
+.budget input {
+  display: none;
+}
+
+.how__input--selected{
+  width: calc(33% - 30px);
+  padding: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: $sans;
+  font-weight: bold;
   color: $blue;
 }
+<<<<<<< HEAD
 input[type=radio] {
   background-color: green !important;
 }
 
 .How {
+=======
+.how__input--notselected{
+  width: calc(33% - 3vw);
+  padding: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: $sans;
+  font-weight: bold;
+}
+
+.how {
+>>>>>>> 6125e4f34f963d7903de504779d1bd7776bd8c31
   display: flex;
   flex-wrap: wrap;
   color: white;
   width: 100%;
-  padding: 0 0px;
+  padding: $page;
   margin-bottom: 60px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
-.How input {
+
+.how input {
   margin-right: 16px;
   border: 3px solid red;
 }
-.How label {
-  width: calc(33% - 40px);
-  padding: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-family: $sans;
+.how__input--selected span.checkbox:hover,
+.how__input--notselected span.checkbox:hover {
+  cursor: pointer;
 }
-.Size {
+.how__input--notselected span::before {
+  content: '';
+  padding-left: 20px;
+  border: 2px solid $white;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+.how__input--selected span::before {
+  content: '';
+  padding-left: 20px;
+  border: 2px solid $blue;
+  background: $blue;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+
+.you{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  padding: $page;
+}
+.you__input--notselected {
+  width: calc(50% - 20px);
+  margin: 20px 0;
+  font-family: $sans;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0,0,33,0.15);
+}
+.you__input--selected {
+  width: calc(50% - 20px);
+  margin: 20px 0;
+  font-family: $sans;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid $blue;
+}
+
+.size {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0px;
+  padding: $page;
   margin-bottom: 60px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
-.Size label {
-  width: calc(25% - 40px);
-  padding: 20px;
+.size label {
+  width: calc(25% - 5vw);
+  padding: 20px 0;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-family: $sans;
 }
-.Budget {
+.size input {
+  margin-right: 16px;
+}
+.size__input--selected span.checkbox:hover,
+.size__input--notselected span.checkbox:hover {
+  cursor: pointer;
+}
+.size__input--notselected span::before {
+  content: '';
+  padding-left: 20px;
+  border: 2px solid $blue;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+.size__input--selected span::before {
+  content: '';
+  padding-left: 20px;
+  border: 2px solid $blue;
+  background: $blue;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+
+
+.budget {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 0px;
+  padding: $page;
   margin-bottom: 60px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
-.Budget label {
+.budget label {
   width: calc(25% - 40px);
-  padding: 20px;
+  padding: 20px 0;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-family: $sans;
 }
-.TellUs{
+.tell{
   width: 100%;
+  padding: $page;
 }
-.TellUs textarea {
+.tell textarea {
   width: 100%;
   min-height: 160px;
 }

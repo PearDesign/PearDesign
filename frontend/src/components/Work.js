@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 import projects from '../projectdata';
 
 export class Work extends Component {
+  componentDidMount() {
+    // Scroll to the top of the page
+    window.scrollTo(0,0);
+  }
+
   render(){
     return(
       <div className="Work">

@@ -1,0 +1,125 @@
+button {
+  background: 0;
+  box-shadow: 0;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.button__hire--nav {
+  margin: 0 10px;
+  border-radius: 2em;
+  padding: 0.85em 1.65em 0.5em;
+  border: 0.2em solid #323d4c;
+  font-size: 0.8em; }
+
+.button__work--header {
+  margin: 30px auto;
+  padding: 18px 30px 14px;
+  line-height: 20px;
+  border-radius: 2em;
+  letter-spacing: 1.5px;
+  box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.15);
+  background: #323d4c;
+  color: #fff; }
+
+@font-face {
+  src: url(../assets/fonts/SofiaProMedium.otf);
+  font-family: "SofiaMed"; }
+
+.Header {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1330px;
+  height: 80vh;
+  max-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center; }
+
+.Home__hero {
+  padding: 20px;
+  width: 100%; }
+
+.Home__heroHeadline {
+  margin: 0 0 30px; }
+
+.Home__heroText {
+  font-size: 22px;
+  line-height: 1.55;
+  color: #615f70; }
+
+.Home {
+  width: 100%;
+  margin: 0 auto; }
+
+.Home__Services {
+  width: 100%;
+  padding: 30px 0;
+  background: #f9461c; }
+
+.Home__Projects {
+  width: 100%;
+  padding: 30px 0; }
+
+.Home__ProjectsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1330px; }
+
+.ProjectTile {
+  width: calc(50% - 80px);
+  text-align: left;
+  margin: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap; }
+
+.ProjectTile__imgLink {
+  width: 100%; }
+
+.ProjectTile__img {
+  width: 100%;
+  object-fit: cover; }
+
+.ProjectTile__title {
+  width: 100%; }
+
+.ProjectTile__tag {
+  width: 100%;
+  margin: 0; }
+
+.NavBar {
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1330px;
+  width: 100%;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.NavBar__logo {
+  max-width: 200px; }
+
+.NavBar__links {
+  color: #323d4c;
+  text-transform: uppercase;
+  margin: 0 20px;
+  background: 0;
+  opacity: 0.7;
+  letter-spacing: 1px;
+  font-size: 0.8em;
+  font-weight: bold; }
+
+.NavBar__links:hover {
+  text-transform: uppercase;
+  opacity: 1; }
+
+.Footer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 0; }

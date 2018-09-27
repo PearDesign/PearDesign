@@ -49,10 +49,10 @@ export class Contact extends Component {
           </div>
           <div className="AboutYou">
             <h2 className="Contact__SectionHeader">Tell Us About Yourself</h2>
-            <label>Name <input type="text" name="name" onChange={this.handleChange.bind(this)}/></label>
-            <label>Company <input type="text" name="company" onChange={this.handleChange.bind(this)}/></label>
-            <label>Email <input type="email" name="email" onChange={this.handleChange.bind(this)}/></label>
-            <label>Phone <input type="phone" name="phone" onChange={this.handleChange.bind(this)}/></label>
+            <input type="text" name="name" placeholder="Name" onChange={this.handleChange.bind(this)}/>
+            <input type="text" name="company" placeholder="Company" onChange={this.handleChange.bind(this)}/>
+            <input type="email" name="email" placeholder="Email" onChange={this.handleChange.bind(this)}/>
+            <input type="phone" name="phone" placeholder="Phone" onChange={this.handleChange.bind(this)}/>
           </div>
           <div className="Size">
             <h2 className="Contact__SectionHeader">Company size</h2>

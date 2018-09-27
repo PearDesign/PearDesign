@@ -81,6 +81,9 @@ a {
 .How input[type=checkbox]:checked + label {
   color: #6788FF; }
 
+input[type=radio] {
+  background-color: green !important; }
+
 .How {
   display: flex;
   flex-wrap: wrap;
@@ -91,7 +94,8 @@ a {
   box-sizing: border-box; }
 
 .How input {
-  margin-right: 16px; }
+  margin-right: 16px;
+  border: 3px solid red; }
 
 .How label {
   width: calc(33% - 40px);

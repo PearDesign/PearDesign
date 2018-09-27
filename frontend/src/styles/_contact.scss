@@ -15,6 +15,10 @@
 .How input[type=checkbox]:checked + label{
   color: $blue;
 }
+input[type=radio] {
+  background-color: green !important;
+}
+
 .How {
   display: flex;
   flex-wrap: wrap;
@@ -26,6 +30,7 @@
 }
 .How input {
   margin-right: 16px;
+  border: 3px solid red;
 }
 .How label {
   width: calc(33% - 40px);

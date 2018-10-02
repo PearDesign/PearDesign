@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { LogoText } from './LogoText'
+import { LogoText } from './LogoText';
+import { NavLinks } from './Links';
 
 export class Nav extends Component {
   render() {
-    const pages = ['Work', 'Contact'];
-    const navLinks = pages.map(page => {
-      return (
-        <li className="Nav__link" key={page}>
-          <Link to={"/" + page.toLowerCase()}>{page}</Link>
-        </li>
-      )
-    });
 
     return(
       <nav className="Nav">
@@ -20,7 +13,7 @@ export class Nav extends Component {
         </div>
         <div className="Nav__links">
             <ul>
-              {navLinks}
+              <NavLinks />
             </ul>
         </div>
       </nav>

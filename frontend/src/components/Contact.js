@@ -55,18 +55,11 @@ export class Contact extends Component {
             </div>
           </div>
           <div className="you">
-            <h2 className="Contact__SectionHeader">Tell Us About Yourself</h2>
-<<<<<<< HEAD
-            <input type="text" name="name" placeholder="Name" onChange={this.handleChange.bind(this)}/>
-            <input type="text" name="company" placeholder="Company" onChange={this.handleChange.bind(this)}/>
-            <input type="email" name="email" placeholder="Email" onChange={this.handleChange.bind(this)}/>
-            <input type="phone" name="phone" placeholder="Phone" onChange={this.handleChange.bind(this)}/>
-=======
+            <h2 className="Contact__SectionHeader">Tell us about yourself</h2>
             <input className={this.state.name ? 'you__input--selected' : 'you__input--notselected'} placeholder="Name" type="text" name="name" onChange={this.handleChange.bind(this)}/>
             <input className={this.state.company ? 'you__input--selected' : 'you__input--notselected'} placeholder="Company" type="text" name="company" onChange={this.handleChange.bind(this)}/>
             <input className={this.state.email ? 'you__input--selected' : 'you__input--notselected'} placeholder="Email" type="email" name="email" onChange={this.handleChange.bind(this)}/>
             <input className={this.state.phone ? 'you__input--selected' : 'you__input--notselected'} placeholder="Phone" type="phone" name="phone" onChange={this.handleChange.bind(this)}/>
->>>>>>> 6125e4f34f963d7903de504779d1bd7776bd8c31
           </div>
           <div className="size">
             <h2 className="Contact__SectionHeader">Company size</h2>
@@ -86,7 +79,7 @@ export class Contact extends Component {
             <h2>Tell us about your project</h2>
             <textarea name="message" onChange={this.handleChange.bind(this)} ></textarea>
           </div>
-          <button type="submit">Send</button>
+          <button className="Contact__submit" type="submit">Send</button>
         </form>
       </div>
     );

@@ -17,7 +17,10 @@ export class Work extends Component {
             <img src={projects.haf.featuredImage} alt=""/>
           </Link>
           <Link to={projects.mari.url} className="Grid__Tile">
-            <img src={projects.haf.featuredImage} alt=""/>
+            <img src={projects.mari.featuredImage} alt=""/>
+          </Link>
+          <Link to={projects.ewcc.url} className="Grid__Tile">
+            <img src={projects.ewcc.featuredImage} alt=""/>
           </Link>
         </div>
       </div>

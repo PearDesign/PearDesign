@@ -1,6 +1,8 @@
 $container: 960px;
-$page: 0 20px;
+$page: 0 40px;
 $test: inset 0px 0px 3px #0f0;
+
+
 
 .App {
   overflow: hidden;
@@ -15,3 +17,5 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+textarea, select, input, button { outline: none; border: 0; }

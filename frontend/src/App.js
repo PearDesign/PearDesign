@@ -11,10 +11,11 @@ import { FooterNav } from './components/FooterNav';
 import { Footer } from './components/Footer';
 
 class App extends Component {
+
   render() {
 
     return (
-      <BrowserRouter>
+      <BrowserRouter onUpdate={() => window.scrollTo(0,0)}>
         <div className="App">
           <Header />
           <Nav />

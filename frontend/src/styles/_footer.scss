@@ -1,20 +1,39 @@
 .Footer{
-  padding: 80px 0 40px;
-  background: $black;
+  padding: 0px 0 0;
   width: 100%;
   box-sizing: border-box;
   align-self: flex-end;
 }
 .Footer__Content{
+  background: $black;
+  padding: 80px 20px 40px;
+}
+.Footer__Container{
   margin: 0 auto;
   max-width: 960px;
-  padding: 0 20px;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+}
+.Footer .LogoText{
+  padding-bottom: 20px;
 }
 .Footer__Reserved{
   color: $white;
+}
+.Footer__cta{
+  text-align: center;
+  background: $white;
+  position: relative;
+  margin: 0 0 0px 0px;
+  padding: 100px 0;
+
+}
+.Footer__ctaHeadline{
+  color: $black;
+}
+.Footer__ctaHeadline span {
+  color: $blue;
+  border-bottom: 2px solid $blue;
 }

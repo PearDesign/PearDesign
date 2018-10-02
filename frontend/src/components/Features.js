@@ -16,11 +16,6 @@ export class Features extends Component {
           <h2 className="Features__Title">Digital Product Design</h2>
           <div className="Features__link"><span>Mari for Michigan</span></div>
         </Link>
-        <div className="WorkLink">
-          <Link to='/work' className="Button__Work--outline">
-            See all work
-          </Link>
-        </div>
       </div>
     );
   }

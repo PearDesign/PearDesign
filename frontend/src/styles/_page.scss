@@ -1,6 +1,7 @@
 .Page{
   margin: 0 auto;
-  padding: 40px 0px 0px;
+  padding: $page;
+  padding-top: 40px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,8 @@
   width: 100%;
   max-width: $container;
   margin: 0 auto;
-  padding: 60px 20px 60px;
+  padding: $page;
+  padding-top: 60px;
   box-sizing: border-box;
   min-height: 220px;
 }
@@ -24,7 +26,7 @@
   max-width: $container;
   line-height: 1.8;
   margin: 0px auto 30px;
-  padding: 0 20px;
+  padding: $page;
   box-sizing: border-box;
 }
 .Sidetext{

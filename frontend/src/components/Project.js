@@ -4,6 +4,11 @@ import { MockBar } from './FeatureBar';
 import projects from '../projectdata'
 
 export class Project extends Component {
+  componentDidMount() {
+    // Scroll to the top of the page
+    window.scrollTo(0,0);
+  }
+
   constructor(props) {
     super(props);
 

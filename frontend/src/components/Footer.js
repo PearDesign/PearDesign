@@ -1,13 +1,25 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 import { LogoText } from './LogoText';
 import { PearWhite } from './PearWhite';
 import { NavLinks } from './Links';
 
-export class Footer extends Component {
+class Footer extends Component {
+
   render() {
+    let wrapperClass;
+    let isContact = this.props.location.pathname.toLowerCase().indexOf("/contact");
+    console.log(isContact);
+
+    if (isContact !== -1) {
+      wrapperClass = "Footer--hide";
+    } else {
+      wrapperClass = "Footer";
+    };
+
     return(
-      <div className="Footer">
+      <div className={wrapperClass}>
         <div className="Footer__cta">
           <h2 className="Footer__ctaHeadline">
             Building something cool? <span><Link to="/contact">Pear with us</Link></span>
@@ -29,3 +41,5 @@ export class Footer extends Component {
     );
   }
 }
+
+export default withRouter(Footer);

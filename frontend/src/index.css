@@ -91,7 +91,7 @@ textarea, select, input, button {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 960px;
+  max-width: 1024px;
   margin: 0px auto 0;
   padding: 0px 0px;
   box-sizing: border-box;
@@ -262,7 +262,7 @@ textarea, select, input, button {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 960px;
+  max-width: 1024px;
   margin: 0px auto 0;
   padding: 0 40px;
   box-sizing: border-box;
@@ -280,12 +280,10 @@ textarea, select, input, button {
   margin: 120px 0; }
 
 .Features__Image {
-  object-fit: cover;
-  height: 480px;
+  object-fit: co;
+  height: 540px;
   width: 100%;
-  background: #6788FF;
-  background-position: center;
-  background-size: cover; }
+  background: #6788FF; }
 
 .Features__Title {
   margin: 36px 0 28px;
@@ -313,15 +311,16 @@ textarea, select, input, button {
   margin: 60px auto 80px;
   text-align: center; }
 
-.Footer {
+.Footer, .Footer--hide {
   padding: 0px 0 0;
+  margin-top: 80px;
   width: 100%;
   box-sizing: border-box;
   align-self: flex-end; }
 
 .Footer__Content {
   background: #000021;
-  padding: 80px 20px 40px; }
+  padding: 80px 40px 40px; }
 
 .Footer__Container {
   margin: 0 auto;
@@ -342,7 +341,10 @@ textarea, select, input, button {
   background: #ffffff;
   position: relative;
   margin: 0 0 0px 0px;
-  padding: 100px 0; }
+  padding: 0 0 100px 0; }
+
+.Footer--hide .Footer__cta {
+  display: none; }
 
 .Footer__ctaHeadline {
   color: #000021; }
@@ -432,7 +434,7 @@ textarea, select, input, button {
 
 .Page {
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0;
   padding-top: 40px;
   box-sizing: border-box;
   display: flex;
@@ -444,7 +446,7 @@ textarea, select, input, button {
 .Page__headline {
   color: #ffffff;
   width: 100%;
-  max-width: 960px;
+  max-width: 1024px;
   margin: 0 auto;
   padding: 0 40px;
   padding-top: 60px;
@@ -455,7 +457,7 @@ textarea, select, input, button {
   color: #ffffff;
   font-size: 22px;
   font-family: "Lato", sans-serif;
-  max-width: 960px;
+  max-width: 1024px;
   line-height: 1.8;
   margin: 0px auto 30px;
   padding: 0 40px;
@@ -485,7 +487,6 @@ textarea, select, input, button {
   flex-wrap: wrap;
   max-width: 920px;
   width: 100%;
-  height: 100%;
   margin: 0 auto;
   overflow: hidden;
   border-radius: 2px;
@@ -714,7 +715,7 @@ textarea, select, input, button {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 960px;
+  max-width: 1024px;
   margin: 0px auto 0;
   padding: 0px 0px;
   box-sizing: border-box;

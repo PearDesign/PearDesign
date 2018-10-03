@@ -1,12 +1,13 @@
-.Footer{
+.Footer, .Footer--hide {
   padding: 0px 0 0;
+  margin-top: 80px;
   width: 100%;
   box-sizing: border-box;
   align-self: flex-end;
 }
 .Footer__Content{
   background: $black;
-  padding: 80px 20px 40px;
+  padding: 80px 40px 40px;
 }
 .Footer__Container{
   margin: 0 auto;
@@ -27,8 +28,10 @@
   background: $white;
   position: relative;
   margin: 0 0 0px 0px;
-  padding: 100px 0;
-
+  padding: 0 0 100px 0;
+}
+.Footer--hide .Footer__cta{
+  display: none;
 }
 .Footer__ctaHeadline{
   color: $black;

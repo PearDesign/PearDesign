@@ -7,11 +7,9 @@ import { Home } from './components/Home';
 import { Work } from './components/Work';
 import { Project } from './components/Project';
 import { Contact } from './components/Contact';
-import { FooterNav } from './components/FooterNav';
-import { Footer } from './components/Footer';
+import Footer from './components/Footer';
 
 class App extends Component {
-
   render() {
 
     return (
@@ -27,7 +25,6 @@ class App extends Component {
               <Route path="/work/:project_name" component={ Project }/>
             </Switch>
           </div>
-          <FooterNav />
           <Footer />
         </div>
       </BrowserRouter>

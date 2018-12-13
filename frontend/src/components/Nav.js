@@ -11,11 +11,7 @@ export class Nav extends Component {
         <div className="Nav__logo">
           <Link to={"/"}><LogoText /></Link>
         </div>
-        <div className="Nav__links">
-            <ul>
-              <NavLinks />
-            </ul>
-        </div>
+          <NavLinks />
       </nav>
     );
   }

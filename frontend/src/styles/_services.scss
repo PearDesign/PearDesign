@@ -1,5 +1,6 @@
 .Services{
   margin: 60px auto 90px;
+  padding: 20px;
   max-width: 1024px;
   width: 100%;
   display: flex;
@@ -7,9 +8,10 @@
 }
 .Services__HeadlineContainer{
   width: 100%;
-}
-.Services__Headline{
   max-width: 688px;
   margin: 0 auto;
   padding: 60px 0;
+  text-align: center;
+}
+.Services__Headline{
 }

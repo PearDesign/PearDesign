@@ -4,7 +4,7 @@
   width: 100%;
   max-width: $container;
   margin: 0px auto 0;
-  padding: 0px 0px;
+  padding: 0;
   box-sizing: border-box;
   z-index: 11;
   position: relative;
@@ -17,11 +17,44 @@
 }
 .Grid__Tile{
   width: 100%;
-  padding: 0 20px;
-  margin: 0 0 3vw 0;
+  padding: 0;
+  margin: 0 20px 3vw;
+  overflow: hidden;
+  display: flex;
 }
 .Grid__Tile img {
   width: 100%;
+}
+
+// hover 
+
+.hover {
+  opacity: 0;
+  background: $blue;
+  color: $white;
+  font-family: $sans;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  position: absolute;
+  padding: 18px;
+  margin: 0 30px 0;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
+.hover span::before {
+  content: "View Project";
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+.Grid__Tile:hover .hover {
+  opacity: 1;
+  transition: 0.05s;
+}
+.hover:hover {
+  background: linear-gradient(190deg, #219653 -2.54%, #FFCD34 69.33%);
+  transition: 0.1s;
 }
 
 

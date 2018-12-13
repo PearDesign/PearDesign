@@ -1,5 +1,5 @@
 $container: 1024px;
-$page: 0 40px;
+$page: 0 20px;
 $test: inset 0px 0px 3px #0f0;
 
 
@@ -19,3 +19,8 @@ a {
 }
 
 textarea, select, input, button { outline: none; border: 0; }
+
+ul{
+  margin: 0;
+  padding: 0;
+}

@@ -12,7 +12,7 @@ export class Services extends Component {
     return(
       <div className="Services">
         <div className="Services__HeadlineContainer">
-          <h2 className="Services__Headline">We started Pear Design because we love building things. Here is what we do best:</h2>
+          <h2 className="Services__Headline">Capabilities:</h2>
         </div>
         <Service
           img={webdev}

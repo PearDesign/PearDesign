@@ -13,11 +13,9 @@ export class NavLinks extends Component{
     });
 
     return (
-      <div className="Nav__links">
-          <ul>
-            {Links}
-          </ul>
-      </div>
+        <ul className="Nav__links">
+          {Links}
+        </ul>
     );
   }
 

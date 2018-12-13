@@ -40,3 +40,10 @@
   color: $blue;
   border-bottom: 2px solid $blue;
 }
+.Footer__ctaHeadline span:hover {
+  background-image: linear-gradient(190deg, #219653 -2.54%, #FFCD34 69.33%);
+  color: transparent; 
+  background-clip: text;
+  transition: 0.1s;
+  border: 0;
+}

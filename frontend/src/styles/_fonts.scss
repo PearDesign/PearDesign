@@ -33,16 +33,17 @@ h2{
   color: $black;
   font-size: 30px;
   line-height: 1.6;
+  text-rendering: optimizeLegibility;
 }
 h3{
   font-family: $serif;
   color: $black;
-
+  text-rendering: optimizeLegibility;
 }
 h4{
   font-family: $serif;
   color: $black;
-
+  text-rendering: optimizeLegibility;
 }
 h5{
   font-family: $serif;

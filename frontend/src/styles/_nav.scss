@@ -7,24 +7,33 @@
   height: 120px;
   max-width: 1330px;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 20px;
   box-sizing: border-box;
   z-index: 10;
+  overflow: hidden;
 }
 .Nav__logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 40vw;
+  min-width: 100px;
+  max-width: 240px;
+  display: inline;
+  margin: auto 0;
+}
+.LogoText{
+  display: inline;
 }
 .Nav__links{
 
 }
 .Nav__link{
   color: $white;
-  padding-left: 60px;
   font-family: $sans;
   font-size: 18px;
-  list-style: none;
   display: inline;
-  font-weight: bold;
+  margin: auto 0 auto 6vw;
+}
+.Nav__link:hover{
+  padding-bottom: 4px;
+  border-bottom: 2px solid $white;
+  transition: 0.1s;
 }

@@ -14,10 +14,15 @@
   width: 100%;
   max-width: $container;
   margin: 0 auto;
-  padding: $page;
+  padding: 0;
   padding-top: 60px;
+  padding-bottom: 60px;
   box-sizing: border-box;
-  min-height: 220px;
+}
+.Page__headline span{
+  background-image: linear-gradient(190deg, #219653 -2.54%, #FFCD34 69.33%);
+  color: transparent; 
+  background-clip: text;
 }
 .Page__subheadline{
   color: $white;
@@ -26,7 +31,6 @@
   max-width: $container;
   line-height: 1.8;
   margin: 0px auto 30px;
-  padding: $page;
   box-sizing: border-box;
 }
 .Sidetext{

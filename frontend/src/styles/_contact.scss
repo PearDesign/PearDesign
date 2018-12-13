@@ -4,7 +4,7 @@
   width: 100%;
   max-width: $container;
   margin: 0px auto 0;
-  padding: 0px 0px;
+  padding: $page;
   box-sizing: border-box;
   z-index: 11;
   position: relative;
@@ -15,13 +15,13 @@
 }
 
 .how input,
-.size input,
+.type input,
 .budget input {
   display: none;
 }
 
 .how__input--selected{
-  width: calc(33% - 3vw);
+  width: 100%;
   padding: 20px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -32,7 +32,7 @@
 }
 
 .how__input--notselected{
-  width: calc(33% - 3vw);
+  width: 100%;
   padding: 20px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -42,18 +42,17 @@
 }
 
 .how {
-  display: flex;
-  flex-wrap: wrap;
   color: white;
   width: 100%;
-  padding: $page;
   margin-bottom: 60px;
   box-sizing: border-box;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 3vmin;
 }
 
-.how__input--selected .checkbox:hover,
-.how__input--notselected .checkbox:hover {
+.how__input--selected label:hover,
+.how__input--notselected label:hover {
   cursor: pointer;
 }
 .how__input--notselected::before {
@@ -75,78 +74,39 @@
 }
 
 .you{
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 14.5vw;
   width: 100%;
-  justify-content: space-between;
-  padding: $page;
+}
+.you__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 3vmin;  
 }
 .you__input--notselected {
-  width: calc(50% - 20px);
+  width: 100%;
   margin: 20px 0;
   font-family: $sans;
   letter-spacing: 2px;
   text-transform: uppercase;
   border: 0;
   padding: 20px 0;
-  border-bottom: 1px solid rgba(0,0,33,0.15);
+  border-bottom: 2px solid rgba(0,0,33,0.15);
   background: 0;
 }
 .you__input--selected {
-  width: calc(50% - 20px);
+  width: 100%;
   margin: 20px 0;
   font-family: $sans;
   letter-spacing: 2px;
   text-transform: uppercase;
   border: 0;
   padding: 20px 0;
-  border-bottom: 1px solid $blue;
+  border-bottom: 2px solid $blue;
   background: 0;
 }
 
-.size {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: $page;
-  margin-bottom: 60px;
-  box-sizing: border-box;
-  justify-content: space-between;
-}
-.size label {
-  width: calc(25% - 5vw);
-  padding: 20px 0;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-family: $sans;
-}
-.size input {
-  margin-right: 16px;
-}
-.size__input--selected span.checkbox:hover,
-.size__input--notselected span.checkbox:hover {
-  cursor: pointer;
-}
-.size__input--notselected span::before {
-  content: '';
-  padding-left: 20px;
-  border: 2px solid $blue;
-  margin-right: 20px;
-  box-sizing: border-box;
-  border-radius: 100%;
-}
-.size__input--selected span::before {
-  content: '';
-  padding-left: 20px;
-  border: 2px solid $blue;
-  background: $blue;
-  margin-right: 20px;
-  box-sizing: border-box;
-  border-radius: 100%;
-}
 
-
+.type, 
 .budget {
   width: 100%;
   display: flex;
@@ -156,13 +116,37 @@
   box-sizing: border-box;
   justify-content: space-between;
 }
+.type label,
 .budget label {
-  width: calc(25% - 40px);
-  padding: 20px 0;
+  flex-grow: 1;
+  padding: 20px 0px;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   font-family: $sans;
+  text-align: center;
+  border: 2px solid rgba(0,0,33,0.15);
+  border-radius: 2em;
+  cursor: pointer;
+  margin: auto;
 }
+.type__input--selected,
+.type__input--notselected,
+.budget__input--selected,
+.budget__input--notselected {
+  flex-grow: 1;
+  margin: 8px 0;
+  min-width: 200px;
+  max-width: calc(25% - 20px);
+  display: flex;
+  
+}
+.type__input--selected label, 
+.budget__input--selected label{
+  border: 2px solid $blue;
+  color: $blue;
+}
+
+
 .tell{
   width: 100%;
   padding: $page;
@@ -171,7 +155,7 @@
   width: 100%;
   min-height: 160px;
   border-radius: 0.25em;
-  border: 1px solid rgba(0,0,33,0.15);
+  border: 2px solid rgba(0,0,33,0.15);
   padding: 10px;
   font-family: $sans;
   color: $black;

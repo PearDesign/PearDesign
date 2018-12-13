@@ -14,14 +14,16 @@
   width: calc(50% - 20px);
   height: auto;
   margin: 60px 0;
+  min-width: 400px;
 }
 .Features__Tile--right{
   width: calc(50% - 20px);
+  min-width: 400px;
   height: auto;
   margin: 120px 0;
 }
 .Features__Image{
-  object-fit: co;
+  object-fit: cover;
   height: 540px;
   width: 100%;
   background: $blue;

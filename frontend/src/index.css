@@ -23,15 +23,18 @@ h2 {
   font-family: "Arbutus", serif;
   color: #000021;
   font-size: 30px;
-  line-height: 1.6; }
+  line-height: 1.6;
+  text-rendering: optimizeLegibility; }
 
 h3 {
   font-family: "Arbutus", serif;
-  color: #000021; }
+  color: #000021;
+  text-rendering: optimizeLegibility; }
 
 h4 {
   font-family: "Arbutus", serif;
-  color: #000021; }
+  color: #000021;
+  text-rendering: optimizeLegibility; }
 
 h5 {
   font-family: "Arbutus", serif; }
@@ -61,6 +64,10 @@ textarea, select, input, button {
   outline: none;
   border: 0; }
 
+ul {
+  margin: 0;
+  padding: 0; }
+
 .Button__Work--outline {
   padding: 0.75em 1.5em;
   font-family: "Lato", sans-serif;
@@ -73,7 +80,7 @@ textarea, select, input, button {
   border-radius: 2px; }
 
 .Contact__submit {
-  margin: 0 40px;
+  margin: 0 20px;
   margin-top: 20px;
   padding: 0.75em 1.5em;
   font-family: "Lato", sans-serif;
@@ -87,13 +94,18 @@ textarea, select, input, button {
   outline: 0;
   border: 0; }
 
+.Contact__submit:hover {
+  cursor: pointer;
+  background-image: linear-gradient(190deg, #219653 0%, #FFCD34 75.33%);
+  transition: 0.5s; }
+
 .Contact {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   max-width: 1024px;
   margin: 0px auto 0;
-  padding: 0px 0px;
+  padding: 0 20px;
   box-sizing: border-box;
   z-index: 11;
   position: relative; }
@@ -103,12 +115,12 @@ textarea, select, input, button {
   padding-top: 20px; }
 
 .how input,
-.size input,
+.type input,
 .budget input {
   display: none; }
 
 .how__input--selected {
-  width: calc(33% - 3vw);
+  width: 100%;
   padding: 20px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -118,7 +130,7 @@ textarea, select, input, button {
   margin-right: 16px; }
 
 .how__input--notselected {
-  width: calc(33% - 3vw);
+  width: 100%;
   padding: 20px 0;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -127,17 +139,16 @@ textarea, select, input, button {
   margin-right: 16px; }
 
 .how {
-  display: flex;
-  flex-wrap: wrap;
   color: white;
   width: 100%;
-  padding: 0 40px;
   margin-bottom: 60px;
   box-sizing: border-box;
-  justify-content: space-between; }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 3vmin; }
 
-.how__input--selected .checkbox:hover,
-.how__input--notselected .checkbox:hover {
+.how__input--selected label:hover,
+.how__input--notselected label:hover {
   cursor: pointer; }
 
 .how__input--notselected::before {
@@ -158,100 +169,83 @@ textarea, select, input, button {
   border-radius: 100%; }
 
 .you {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: 14.5vw;
-  width: 100%;
-  justify-content: space-between;
-  padding: 0 40px; }
+  width: 100%; }
+
+.you__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 3vmin; }
 
 .you__input--notselected {
-  width: calc(50% - 20px);
+  width: 100%;
   margin: 20px 0;
   font-family: "Lato", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   border: 0;
   padding: 20px 0;
-  border-bottom: 1px solid rgba(0, 0, 33, 0.15);
+  border-bottom: 2px solid rgba(0, 0, 33, 0.15);
   background: 0; }
 
 .you__input--selected {
-  width: calc(50% - 20px);
+  width: 100%;
   margin: 20px 0;
   font-family: "Lato", sans-serif;
   letter-spacing: 2px;
   text-transform: uppercase;
   border: 0;
   padding: 20px 0;
-  border-bottom: 1px solid #6788FF;
+  border-bottom: 2px solid #6788FF;
   background: 0; }
 
-.size {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 40px;
-  margin-bottom: 60px;
-  box-sizing: border-box;
-  justify-content: space-between; }
-
-.size label {
-  width: calc(25% - 5vw);
-  padding: 20px 0;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-family: "Lato", sans-serif; }
-
-.size input {
-  margin-right: 16px; }
-
-.size__input--selected span.checkbox:hover,
-.size__input--notselected span.checkbox:hover {
-  cursor: pointer; }
-
-.size__input--notselected span::before {
-  content: '';
-  padding-left: 20px;
-  border: 2px solid #6788FF;
-  margin-right: 20px;
-  box-sizing: border-box;
-  border-radius: 100%; }
-
-.size__input--selected span::before {
-  content: '';
-  padding-left: 20px;
-  border: 2px solid #6788FF;
-  background: #6788FF;
-  margin-right: 20px;
-  box-sizing: border-box;
-  border-radius: 100%; }
-
+.type,
 .budget {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 40px;
+  padding: 0 20px;
   margin-bottom: 60px;
   box-sizing: border-box;
   justify-content: space-between; }
 
+.type label,
 .budget label {
-  width: calc(25% - 40px);
-  padding: 20px 0;
+  flex-grow: 1;
+  padding: 20px 0px;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-family: "Lato", sans-serif; }
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 33, 0.15);
+  border-radius: 2em;
+  cursor: pointer;
+  margin: auto; }
+
+.type__input--selected,
+.type__input--notselected,
+.budget__input--selected,
+.budget__input--notselected {
+  flex-grow: 1;
+  margin: 8px 0;
+  min-width: 200px;
+  max-width: calc(25% - 20px);
+  display: flex; }
+
+.type__input--selected label,
+.budget__input--selected label {
+  border: 2px solid #6788FF;
+  color: #6788FF; }
 
 .tell {
   width: 100%;
-  padding: 0 40px; }
+  padding: 0 20px; }
 
 .tell textarea {
   width: 100%;
   min-height: 160px;
   border-radius: 0.25em;
-  border: 1px solid rgba(0, 0, 33, 0.15);
+  border: 2px solid rgba(0, 0, 33, 0.15);
   padding: 10px;
   font-family: "Lato", sans-serif;
   color: #000021;
@@ -264,7 +258,7 @@ textarea, select, input, button {
   width: 100%;
   max-width: 1024px;
   margin: 0px auto 0;
-  padding: 0 40px;
+  padding: 0 20px;
   box-sizing: border-box;
   z-index: 11;
   position: relative; }
@@ -272,15 +266,17 @@ textarea, select, input, button {
 .Features__Tile--left {
   width: calc(50% - 20px);
   height: auto;
-  margin: 60px 0; }
+  margin: 60px 0;
+  min-width: 400px; }
 
 .Features__Tile--right {
   width: calc(50% - 20px);
+  min-width: 400px;
   height: auto;
   margin: 120px 0; }
 
 .Features__Image {
-  object-fit: co;
+  object-fit: cover;
   height: 540px;
   width: 100%;
   background: #6788FF; }
@@ -353,6 +349,13 @@ textarea, select, input, button {
   color: #6788FF;
   border-bottom: 2px solid #6788FF; }
 
+.Footer__ctaHeadline span:hover {
+  background-image: linear-gradient(190deg, #219653 -2.54%, #FFCD34 69.33%);
+  color: transparent;
+  background-clip: text;
+  transition: 0.1s;
+  border: 0; }
+
 .FooterNav {
   background: #F8F8FF;
   display: flex;
@@ -395,10 +398,10 @@ textarea, select, input, button {
 .MockDesktop {
   width: 960px;
   max-width: calc(50% - 40px);
+  min-width: 400px;
   margin: 20px;
   flex-grow: 1;
   padding-bottom: 26.5%;
-  background: black;
   border-radius: 0.25em;
   background-position: center 0.99vw;
   background-size: contain;
@@ -414,23 +417,32 @@ textarea, select, input, button {
   height: 120px;
   max-width: 1330px;
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 20px;
   box-sizing: border-box;
-  z-index: 10; }
+  z-index: 10;
+  overflow: hidden; }
 
 .Nav__logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  width: 40vw;
+  min-width: 100px;
+  max-width: 240px;
+  display: inline;
+  margin: auto 0; }
+
+.LogoText {
+  display: inline; }
 
 .Nav__link {
   color: #ffffff;
-  padding-left: 60px;
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  list-style: none;
   display: inline;
-  font-weight: bold; }
+  margin: auto 0 auto 6vw; }
+
+.Nav__link:hover {
+  padding-bottom: 4px;
+  border-bottom: 2px solid #ffffff;
+  transition: 0.1s; }
 
 .Page {
   margin: 0 auto;
@@ -448,10 +460,15 @@ textarea, select, input, button {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0;
   padding-top: 60px;
-  box-sizing: border-box;
-  min-height: 220px; }
+  padding-bottom: 60px;
+  box-sizing: border-box; }
+
+.Page__headline span {
+  background-image: linear-gradient(190deg, #219653 -2.54%, #FFCD34 69.33%);
+  color: transparent;
+  background-clip: text; }
 
 .Page__subheadline {
   color: #ffffff;
@@ -460,7 +477,6 @@ textarea, select, input, button {
   max-width: 1024px;
   line-height: 1.8;
   margin: 0px auto 30px;
-  padding: 0 40px;
   box-sizing: border-box; }
 
 .Sidetext {
@@ -477,7 +493,7 @@ textarea, select, input, button {
 
 .Project {
   margin: 0 auto;
-  padding: 0px 0px;
+  padding: 0;
   position: relative;
   width: 100%;
   box-sizing: border-box; }
@@ -485,7 +501,7 @@ textarea, select, input, button {
 .Project__Feature {
   display: flex;
   flex-wrap: wrap;
-  max-width: 920px;
+  max-width: 984px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
@@ -560,9 +576,7 @@ textarea, select, input, button {
 .Project__Services span {
   margin-bottom: 30px;
   letter-spacing: 3px;
-  text-transform: uppercase;
-  font-family: "Lato", sans-serif;
-  font-size: 12px; }
+  font-family: "Lato", sans-serif; }
 
 .Project__Services ul {
   list-style: none;
@@ -624,6 +638,7 @@ textarea, select, input, button {
   margin-left: 52px; }
 
 .Project__Testimonial {
+  display: none;
   font-size: 28px;
   line-height: 1.6;
   margin-bottom: 16px; }
@@ -649,18 +664,18 @@ textarea, select, input, button {
 
 .Services {
   margin: 60px auto 90px;
+  padding: 20px;
   max-width: 1024px;
   width: 100%;
   display: flex;
   flex-wrap: wrap; }
 
 .Services__HeadlineContainer {
-  width: 100%; }
-
-.Services__Headline {
+  width: 100%;
   max-width: 688px;
   margin: 0 auto;
-  padding: 60px 0; }
+  padding: 60px 0;
+  text-align: center; }
 
 .Service {
   width: calc(33% - 40px);
@@ -717,7 +732,7 @@ textarea, select, input, button {
   width: 100%;
   max-width: 1024px;
   margin: 0px auto 0;
-  padding: 0px 0px;
+  padding: 0;
   box-sizing: border-box;
   z-index: 11;
   position: relative; }
@@ -730,11 +745,40 @@ textarea, select, input, button {
 
 .Grid__Tile {
   width: 100%;
-  padding: 0 20px;
-  margin: 0 0 3vw 0; }
+  padding: 0;
+  margin: 0 20px 3vw;
+  overflow: hidden;
+  display: flex; }
 
 .Grid__Tile img {
   width: 100%; }
+
+.hover {
+  opacity: 0;
+  background: #6788FF;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  position: absolute;
+  padding: 18px;
+  margin: 0 30px 0;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25); }
+
+.hover span::before {
+  content: "View Project";
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
+
+.Grid__Tile:hover .hover {
+  opacity: 1;
+  transition: 0.05s; }
+
+.hover:hover {
+  background: linear-gradient(190deg, #219653 -2.54%, #FFCD34 69.33%);
+  transition: 0.1s; }
 
 .Grid__Bottom--Left {
   width: calc(40% - 40px);

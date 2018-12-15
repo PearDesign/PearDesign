@@ -1,17 +1,56 @@
 .Services{
-  margin: 60px auto 90px;
+  margin: 20px 0 60px;
   padding: 20px;
-  max-width: 1024px;
+  max-width: 900px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  align-self: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  justify-content: space-around;
 }
 .Services__HeadlineContainer{
   width: 100%;
   max-width: 688px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 2vw 0;
   text-align: center;
 }
 .Services__Headline{
+}
+.Service{
+  flex: 1;
+  min-width: 240px;
+  max-width: 260px;
+  margin: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+.Service__Icon{
+  width: 64px;
+  max-height: 64px;
+  align-self: center;
+  object-fit: contain;
+}
+.Service__Label{
+  font-family: $sans;
+  width: 100%;
+  color: $black;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 860px) {
+  .Service {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .Service__Label {
+    text-align: left;
+    margin-left: 12px;
+  }
 }

@@ -1,17 +1,26 @@
 .Contact {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  max-width: $container;
-  margin: 0px auto 0;
-  padding: $page;
+  padding: 0;
   box-sizing: border-box;
   z-index: 11;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-content: center;
+  align-items: center;
 }
 .Contact__SectionHeader{
   width: 100%;
   padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.you, 
+.type, 
+.budget, 
+.tell {
+  background: $white;
 }
 
 .how input,
@@ -20,41 +29,36 @@
   display: none;
 }
 
-.how__input--selected{
-  width: 100%;
-  padding: 20px 0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: $sans;
-  font-weight: bold;
-  color: $blue;
-  margin-right: 16px;
-}
-
-.how__input--notselected{
-  width: 100%;
-  padding: 20px 0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: $sans;
-  font-weight: bold;
-  margin-right: 16px;
-}
 
 .how {
   color: white;
+  overflow: hidden;
   width: 100%;
+  max-width: $container;
+  padding: $page;
+  margin: 0;
   margin-bottom: 60px;
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 3vmin;
+  display: flex;
+  flex-wrap: wrap;
+}
+.how__input--selected,
+.how__input--notselected{
+  flex-grow: 1;
+  min-width: 200px;
+  max-width: 309px;
+  width: 100%;
+  padding: 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: $sans;
+  font-weight: bold;
+  margin-right: 16px;
+}
+.how__input--selected {
+  color: $blue;
 }
 
-.how__input--selected label:hover,
-.how__input--notselected label:hover {
-  cursor: pointer;
-}
 .how__input--notselected::before {
   content: '';
   padding-left: 20px;
@@ -73,13 +77,34 @@
   border-radius: 100%;
 }
 
+.how__input--selected:hover label,
+.how__input--notselected:hover label {
+  cursor: pointer;
+  color: $blue;
+  opacity: 0.9;
+  transition: 0.1s;
+}
+.how__input--notselected:hover::before {
+  border: 2px solid $blue;
+  transition: 0.1s;
+  /*
+  this should allow click to change input
+  */
+}
+
+
 .you{
+  margin: 0;
   margin-top: 14.5vw;
   width: 100%;
+  max-width: $container;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .you__form {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 3vmin;  
 }
 .you__input--notselected {
@@ -93,7 +118,8 @@
   border-bottom: 2px solid rgba(0,0,33,0.15);
   background: 0;
 }
-.you__input--selected {
+.you__input--notselected:focus,
+.you__input--selected:focus {
   width: 100%;
   margin: 20px 0;
   font-family: $sans;
@@ -104,20 +130,57 @@
   border-bottom: 2px solid $blue;
   background: 0;
 }
-
+.you__input--selected {
+  width: 100%;
+  margin: 20px 0;
+  font-family: $sans;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 0;
+  padding: 20px 0;
+  background: 0;
+  border-bottom: 2px solid rgba(0,0,33,0.15);
+}
+.you__input--notselected:hover,
+.you__input--selected:hover {
+  opacity: 0.8;
+}
 
 .type, 
 .budget {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: $page;
+  margin: 0;
   margin-bottom: 60px;
   box-sizing: border-box;
+  width: 100%;
+  max-width: $container;
+  overflow: hidden;
+}
+/*
+.type__form, 
+.budget__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  grid-gap: 3vmin;
+  border: 1px solid red;
+  width: 100%;
+}
+*/ 
+
+.type__form, 
+.budget__form {
+  width: 100%;
+  max-width: $container;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .type label,
 .budget label {
+  width: 100%;
   flex-grow: 1;
   padding: 20px 0px;
   text-transform: uppercase;
@@ -135,10 +198,17 @@
 .budget__input--notselected {
   flex-grow: 1;
   margin: 8px 0;
-  min-width: 200px;
-  max-width: calc(25% - 20px);
+  min-width: 236px;
+  max-width: 236px;
   display: flex;
-  
+}
+.type__input--selected:hover label,
+.budget__input--selected:hover label,
+.type__input--notselected:hover label, 
+.budget__input--notselected:hover label {
+  border: 2px solid $blue;
+  opacity: 0.65;
+  transition: 0.1s;
 }
 .type__input--selected label, 
 .budget__input--selected label{
@@ -149,15 +219,27 @@
 
 .tell{
   width: 100%;
+  max-width: $container;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  box-sizing: border-box;
   padding: $page;
 }
-.tell textarea {
+.tell__form {
+  display: flex;
+  width: 100%;
+  max-width: $container;
+  box-sizing: border-box;
+}
+.tell__form textarea {
   width: 100%;
   min-height: 160px;
   border-radius: 0.25em;
   border: 2px solid rgba(0,0,33,0.15);
-  padding: 10px;
   font-family: $sans;
   color: $black;
   font-size: 18px;
+  padding: 12px;
 }

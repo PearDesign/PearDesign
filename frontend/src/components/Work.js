@@ -12,7 +12,7 @@ export class Work extends Component {
     return(
       <div className="Work">
         <h1 className="Page__headline">The <span>fruits</span> of our labor:</h1>
-        <div className="Grid__Top">
+        <div className="Grid">
           
           <Link to={projects.haf.url} className="Grid__Tile">
             <div className="hover"><span></span></div>

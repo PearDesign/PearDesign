@@ -4,24 +4,29 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 .Project__Feature{
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 984px;
+  max-width: $container;
   width: 100%;
-  margin: 0 auto;
+  align-self: center;
   overflow: hidden;
   border-radius: 2px;
-  background: orange;
-  padding: 0;
-  box-sizing: content-box;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  margin: 0 0 40px 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 .Project__Feature img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  display: inline;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
 }
 .Feature__Bar {
   height: 1vw;
@@ -35,7 +40,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 auto;
   box-sizing: border-box;
 }
 .r{
@@ -62,21 +66,31 @@
   z-index: 20;
   margin-left: 6px;
 }
+.Project__IntroContainer {
+  width: 100%;
+  background: $white;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+}
 .Project__Intro{
   display: flex;
+  align-self: center;
+  flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 960px;
+  align-content: space-between;
+  width: 100%;
+  max-width: $container;
   box-sizing: border-box;
-  padding: 40px 20px 80px;
-  margin: 0 auto;
+  padding: $page;
+  margin: 40px auto 120px;
 }
 .Project__SubHeadline{
-  max-width: calc(60% - 20px);
+  max-width: 700px;
   flex-grow: 3;
 }
 .Project__Services{
-  max-width: calc(30% - 20px);
-  flex-grow: 1;
+  max-width: 240px;
   list-style: none;
   margin-top: 42px;
 }
@@ -102,8 +116,7 @@
   margin: 0 auto;
   padding: 60px 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 .Project__MocksMobile{
   background: $offwhite;
@@ -111,32 +124,10 @@
   min-height: 100px;
   padding: 0 20px;
   box-sizing: border-box;
-}
-.MockMobile__Container{
-  max-width: 1200px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 auto;
-  padding: 120px 0;
+  justify-content: center;
 }
-.MockMobile{
-  min-width: 335px;
-  max-height: 597px;
-  /*
-  border: 1vw solid #c4c4c4;
-  box-sizing: border-box;
-  border-radius: 3em;
-  */
-  box-sizing: content-box;
-  border-radius: 0.25em;
-  overflow: hidden;
-  padding: 20px;
-}
-.MockMobile img {
-  height: 100%;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.25);
-}
+
 .Project__WriteUp{
   margin: 120px auto;
   max-width: 740px;
@@ -145,10 +136,11 @@
   margin-left: 52px;
 }
 .Project__Testimonial{
-  display: none;
   font-size: 28px;
   line-height: 1.6;
   margin-bottom: 16px;
+  /* temp */
+  display: none;
 }
 .Project__Testimonial::before{
   content: url("assets/shapes/quote_small.svg");
@@ -159,6 +151,8 @@
 
 .Project__Testimonial::after{
   content: ("\"");
+  /* temp */
+  display: none;
 }
 .Project__TestimonialAttrib{
   font-family: $sans;
@@ -169,4 +163,6 @@
 }
 .Project__TestimonialAttrib::before{
   content: ("- ");
+  /* temp */
+  display: none;
 }

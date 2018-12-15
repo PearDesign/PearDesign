@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { MockDesktop } from './MockDesktop';
+import { MockMobile } from './MockMobile';
 import { MockBar } from './FeatureBar';
-import projects from '../projectdata'
+import projects from '../projectdata';
 
 export class Project extends Component {
   componentDidMount() {
@@ -22,6 +23,22 @@ export class Project extends Component {
         <li className="Project__Service" key={service}>{service}</li>
       )
     });
+    const desktopMocks = this.state.project.desktopmocks.map(mockup => {
+      return (
+        <MockDesktop
+          key={mockup}
+          image={'url('+ mockup +')'}
+        />
+      )
+    });
+    const mobileMocks = this.state.project.mobilemocks.map(mockup => {
+      return (
+        <MockMobile
+          key={mockup} 
+          image={'url('+ mockup +')'}
+        />
+      )
+    })
 
     return(
       <div className="Project">
@@ -30,31 +47,25 @@ export class Project extends Component {
           <MockBar />
           <img src={this.state.project.featuredImage} alt=""/>
         </div>
-        <div className="Project__Intro">
-          <div className="Project__SubHeadline">
-            <h2>{this.state.project.subheadline}</h2>
-            <p>{this.state.project.introtext}</p>
-          </div>
-          <div className="Project__Services">
-            <span>Services</span>
-            <ul>
-              {services}
-            </ul>
+        <div className="Project__IntroContainer">
+          <div className="Project__Intro">
+            <div className="Project__SubHeadline">
+              <h2>{this.state.project.subheadline}</h2>
+              <p>{this.state.project.introtext}</p>
+            </div>
+            <div className="Project__Services">
+              <span>Services</span>
+              <ul>
+                {services}
+              </ul>
+            </div>
           </div>
         </div>
         <div className="Project__MocksDesktop">
-          <MockDesktop
-            backgroundImage={'url('+this.state.project.desktopmocks[0]+')'}
-          />
-          <MockDesktop
-            backgroundImage={'url('+this.state.project.desktopmocks[1]+')'}
-          />
-          <MockDesktop
-            backgroundImage={'url('+this.state.project.desktopmocks[2]+')'}
-          />
-          <MockDesktop
-            backgroundImage={'url('+this.state.project.desktopmocks[3]+')'}
-          />
+          <div className="MockDesktop__Container">
+            {desktopMocks}
+          </div>
+          
 
         </div>
         <div className="Project__WriteUp">
@@ -67,15 +78,7 @@ export class Project extends Component {
         </div>
         <div className="Project__MocksMobile">
           <div className="MockMobile__Container">
-            <div className="MockMobile">
-              <img src={this.state.project.mobilemocks[0]} alt=""/>
-            </div>
-            <div className="MockMobile">
-              <img src={this.state.project.mobilemocks[1]} alt=""/>
-            </div>
-            <div className="MockMobile">
-              <img src={this.state.project.mobilemocks[2]} alt=""/>
-            </div>
+            {mobileMocks}
           </div>
         </div>
       </div>

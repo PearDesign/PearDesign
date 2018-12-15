@@ -36,7 +36,7 @@ export class Contact extends Component {
     return(
       <div className="Contact">
         <h1 className="Page__headline">Pear with us</h1>
-        <p className="Page__subheadline">Here’s where some contact page copy would go. I haven’t finished it, but think it should maybe be two lines. How can we help?</p>
+        <p className="Page__subheadline">Whether it's coding, designing, campaiging or doodling, we'd love to know: How can we help?</p>
         <form name="contact" method="post" onSubmit={this.handleSubmit.bind(this)}>
           <input type="hidden" name="form-name" value="contact" />
           <div className="how">
@@ -97,26 +97,30 @@ export class Contact extends Component {
           </div>
           <div className="budget">
             <h2 className="Contact__SectionHeader">Estimated budget</h2>
-            <div className={this.state.budget3k ? 'budget__input--selected' : 'budget__input--notselected'}>
-              <input type="checkbox" name="budget3k" onChange={this.handleChange.bind(this)} id='budget3k'/>
-              <label htmlFor='budget3k'>$3k</label>
-            </div>
-            <div className={this.state.budget5k ? 'budget__input--selected' : 'budget__input--notselected'}>
-              <input type="checkbox" name="budget5k" onChange={this.handleChange.bind(this)} id='budget5k'/>
-              <label htmlFor='budget5k'>$3k - $5k</label>
-            </div>
-            <div className={this.state.budget10k ? 'budget__input--selected' : 'budget__input--notselected'}>
-              <input type="checkbox" name="budget10k" onChange={this.handleChange.bind(this)} id='budget10k'/>
-              <label htmlFor='budget10k'>$5k - $10k</label>
-            </div>
-            <div className={this.state.budgettalk ? 'budget__input--selected' : 'budget__input--notselected'}>
-              <input type="checkbox" name="budgettalk" onChange={this.handleChange.bind(this)} id='budgettalk'/>
-              <label htmlFor='budget3k'>Let's Talk</label>
+            <div className="budget__form">
+              <div className={this.state.budget3k ? 'budget__input--selected' : 'budget__input--notselected'}>
+                <input type="checkbox" name="budget3k" onChange={this.handleChange.bind(this)} id='budget3k'/>
+                <label htmlFor='budget3k'>$3k</label>
+              </div>
+              <div className={this.state.budget5k ? 'budget__input--selected' : 'budget__input--notselected'}>
+                <input type="checkbox" name="budget5k" onChange={this.handleChange.bind(this)} id='budget5k'/>
+                <label htmlFor='budget5k'>$3k - $5k</label>
+              </div>
+              <div className={this.state.budget10k ? 'budget__input--selected' : 'budget__input--notselected'}>
+                <input type="checkbox" name="budget10k" onChange={this.handleChange.bind(this)} id='budget10k'/>
+                <label htmlFor='budget10k'>$5k - $10k</label>
+              </div>
+              <div className={this.state.budgettalk ? 'budget__input--selected' : 'budget__input--notselected'}>
+                <input type="checkbox" name="budgettalk" onChange={this.handleChange.bind(this)} id='budgettalk'/>
+                <label htmlFor='budget3k'>Let's Talk</label>
+              </div>
             </div>
           </div>
           <div className="tell">
-            <h2>Tell us about your project</h2>
-            <textarea name="message" onChange={this.handleChange.bind(this)} ></textarea>
+            <h2 className="Contact__SectionHeader">Tell us about your project</h2>
+            <div className="tell__form"> 
+              <textarea name="message" onChange={this.handleChange.bind(this)} ></textarea>
+            </div>
           </div>
           <button className="Contact__submit" type="submit">Send</button>
         </form>

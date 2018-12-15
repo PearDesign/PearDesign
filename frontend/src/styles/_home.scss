@@ -1,8 +1,10 @@
 .Home{
   width: 100%;
-  margin: 0px auto 0;
   padding: 0;
   box-sizing: border-box;
   z-index: 11;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }

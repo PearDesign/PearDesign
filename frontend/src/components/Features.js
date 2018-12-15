@@ -9,14 +9,22 @@ export class Features extends Component {
     return (
       <div className="Features">
         <Link to={projects.haf.url} className="Features__Tile--left">
-          <img className="Features__Image" src={hafFeature} alt=""/>
-          <h2 className="Features__Title">Custom Web Development</h2>
-          <div href="" className="Features__link"><span>Happy Active Family</span></div>
+          <div className="Features__ImageContainer">
+            <div className="Features__Image" style={{ backgroundImage: 'url('+hafFeature+')'}}></div>
+          </div>
+          <div className="Features__Info">
+            <h2 className="Features__Title">Custom Web Development</h2>
+            <div href="" className="Features__link"><span>Happy Active Family</span></div>
+          </div>
         </Link>
         <Link to={projects.mari.url} className="Features__Tile--right">
-          <img className="Features__Image" src={mariFeature} alt=""/>
-          <h2 className="Features__Title">Digital Product Design</h2>
-          <div className="Features__link"><span>Mari for Michigan</span></div>
+          <div className="Features__ImageContainer">
+            <div className="Features__Image" style={{ backgroundImage: 'url('+mariFeature+')'}}></div>
+          </div>
+          <div className="Features__Info">
+            <h2 className="Features__Title">Digital Product Design</h2>
+            <div className="Features__link"><span>Mari for Michigan</span></div>
+          </div>
         </Link>
       </div>
     );

@@ -1,5 +1,5 @@
 .Page{
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   padding-top: 40px;
   box-sizing: border-box;
@@ -8,19 +8,27 @@
   z-index: 10;
   position: relative;
   width: 100%;
+  align-content: center;
+  align-items: center;
 }
+
 .Page__headline{
   color: $white;
   width: 100%;
   max-width: $container;
-  margin: 0 auto;
-  padding: 0;
+  align-self: center;
+  padding: $page;
   padding-top: 60px;
   padding-bottom: 60px;
+  margin: 0;
   box-sizing: border-box;
 }
 .Page__headline span{
-  background-image: linear-gradient(190deg, #219653 -2.54%, #FFCD34 69.33%);
+  background: -webkit-gradient(linear top left, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(190deg, #219653 -2.54%, #FFCD34 69.33%);
+  background: -moz-linear-gradient(190deg, #219653 -2.54%, #FFCD34 69.33%);
+  background: -ms-linear-gradient(190deg, #219653 -2.54%, #FFCD34 69.33%);
+  background: -o-linear-gradient(190deg, #219653 -2.54%, #FFCD34 69.33%);
   color: transparent; 
   background-clip: text;
 }
@@ -28,10 +36,13 @@
   color: $white;
   font-size: 22px;
   font-family: $sans;
+  width: 100%;
   max-width: $container;
   line-height: 1.8;
-  margin: 0px auto 30px;
+  margin: 0px 0 30px;
   box-sizing: border-box;
+  padding: $page;
+  align-self: center;
 }
 .Sidetext{
   color: $white;

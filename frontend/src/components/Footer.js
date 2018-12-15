@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 import { LogoText } from './LogoText';
-import { PearWhite } from './PearWhite';
 import { NavLinks } from './Links';
 
 class Footer extends Component {
@@ -34,7 +33,9 @@ class Footer extends Component {
           </div>
           <div className="Footer__Container">
             <p className="Footer__Reserved">All rights reserved. Pear Design is a brand of Pear Group, LLC.</p>
-            <NavLinks />
+            <div className="Footer__links">
+              <NavLinks />
+            </div>
           </div>
         </div>
       </div>

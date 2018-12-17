@@ -127,11 +127,12 @@ button.Contact__submit:hover {
   padding-top: 20px;
   box-sizing: border-box; }
 
-.you,
-.type,
-.budget,
-.tell {
-  background: #ffffff; }
+@media screen and (max-width: 800px) {
+  .you,
+  .type,
+  .budget,
+  .tell {
+    background: #ffffff; } }
 
 .how input,
 .type input,
@@ -822,6 +823,11 @@ button.Contact__submit:hover {
 .Project__WriteUpText {
   margin-left: 52px; }
 
+@media screen and (max-width: 800px) {
+  .Project__WriteUpText {
+    margin: 0 0 0 0;
+    padding: 20px; } }
+
 .Project__Testimonial {
   font-size: 28px;
   line-height: 1.6;
@@ -960,7 +966,8 @@ button.Contact__submit:hover {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
 
 .Grid__Tile img {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .hover {
   opacity: 0;

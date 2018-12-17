@@ -135,6 +135,12 @@
 .Project__WriteUpText{
   margin-left: 52px;
 }
+@media screen and (max-width: 800px) {
+  .Project__WriteUpText{
+    margin: 0 0 0 0;
+    padding: 20px;
+  }
+}
 .Project__Testimonial{
   font-size: 28px;
   line-height: 1.6;

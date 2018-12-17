@@ -16,5 +16,82 @@
     </noscript>
     <div id="root"></div>
 
+    <div class="hiddenForm">
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="hidden" name="form-name" value="contact" />
+        <div className="how">
+          <div>
+            <input type="checkbox" name="webdev" onChange={this.handleChange.bind(this)} id='webdev'/>
+          </div>
+          <div>
+            <input type="checkbox" name="ui" onChange={this.handleChange.bind(this)} id='ui'/>
+          </div>
+          <div>
+            <input type="checkbox" name="ux" onChange={this.handleChange.bind(this)} id='ux'/>
+          </div>
+          <div>
+            <input type="checkbox" name="brand" onChange={this.handleChange.bind(this)} id='brand'/>
+          </div>
+          <div>
+            <input type="checkbox" name="tech" onChange={this.handleChange.bind(this)} id='tech'/>
+          </div>
+          <div>
+            <input type="checkbox" name="host" onChange={this.handleChange.bind(this)} id='host'/>
+          </div>
+        </div>
+        <div className="you">
+          <h2 className="Contact__SectionHeader">Tell us about yourself</h2>
+          <div className="you__form">
+            <input placeholder="Name" type="text" name="name" onChange={this.handleChange.bind(this)}/>
+            <input placeholder="Company" type="text" name="company" onChange={this.handleChange.bind(this)}/>
+            <input placeholder="Email" type="email" name="email" onChange={this.handleChange.bind(this)}/>
+            <input placeholder="Phone" type="phone" name="phone" onChange={this.handleChange.bind(this)}/>
+          </div>
+        </div>
+        <div className="type">
+          <h2 className="Contact__SectionHeader">Company type</h2>
+          <div className="type__form">
+            <div>
+              <input type="checkbox" name="startup" onChange={this.handleChange.bind(this)} id='startup'/>
+            </div>
+            <div>
+              <input type="checkbox" name="smbus" onChange={this.handleChange.bind(this)} id='smbus'/>
+            </div>
+            <div>
+              <input type="checkbox" name="enterp" onChange={this.handleChange.bind(this)} id='enterp'/>
+            </div>
+            <div>
+              <input type="checkbox" name="nonprof" onChange={this.handleChange.bind(this)} id='nonprof'/>
+            </div>
+          </div>
+        </div>
+        <div className="budget">
+          <h2 className="Contact__SectionHeader">Estimated budget</h2>
+          <div className="budget__form">
+            <div>
+              <input type="checkbox" name="budget3k" onChange={this.handleChange.bind(this)} id='budget3k'/>
+            </div>
+            <div>
+              <input type="checkbox" name="budget5k" onChange={this.handleChange.bind(this)} id='budget5k'/>
+            </div>
+            <div>
+              <input type="checkbox" name="budget10k" onChange={this.handleChange.bind(this)} id='budget10k'/>
+            </div>
+            <div>
+              <input type="checkbox" name="budgettalk" onChange={this.handleChange.bind(this)} id='budgettalk'/>
+            </div>
+          </div>
+        </div>
+        <div className="tell">
+          <h2 className="Contact__SectionHeader">Tell us about your project</h2>
+          <div className="tell__form"> 
+            <textarea name="message" onChange={this.handleChange.bind(this)} ></textarea>
+          </div>
+        </div>
+        <button className="Contact__submit" type="submit">Send</button>
+      </form>
+
+    </div>
+
   </body>
 </html>

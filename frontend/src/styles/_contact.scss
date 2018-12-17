@@ -16,11 +16,13 @@
   box-sizing: border-box;
 }
 
-.you, 
-.type, 
-.budget, 
-.tell {
-  background: $white;
+@media screen and (max-width: 800px) {
+  .you, 
+  .type, 
+  .budget, 
+  .tell {
+    background: $white;
+  }
 }
 
 .how input,

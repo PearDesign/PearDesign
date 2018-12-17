@@ -11,7 +11,7 @@ export class Work extends Component {
   render(){
     return(
       <div className="Work">
-        <h1 className="Page__headline">The <span>fruits</span> of our labor:</h1>
+        <h1 className="Page__headline">The fruits of our labor:</h1>
         <div className="Grid">
           
           <Link to={projects.haf.url} className="Grid__Tile">

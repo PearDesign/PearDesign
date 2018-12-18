@@ -20,7 +20,11 @@
   margin: auto 0;
 }
 .LogoText{
-  display: inline;
+  margin-top: 4px;
+  display: flex;
+}
+.LogoText:hover{
+  opacity: 0.9;
 }
 .Nav__links{
 }

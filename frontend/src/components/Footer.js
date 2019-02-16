@@ -9,7 +9,6 @@ class Footer extends Component {
   render() {
     let wrapperClass;
     let isContact = this.props.location.pathname.toLowerCase().indexOf("/contact");
-    console.log(isContact);
 
     if (isContact !== -1) {
       wrapperClass = "Footer--hide";

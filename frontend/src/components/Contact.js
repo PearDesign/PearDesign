@@ -1,6 +1,6 @@
-// import axios from 'axios';
 import React, { Component } from 'react';
 
+import axios from 'axios';
 export class Contact extends Component {
   componentDidMount() {
     // Scroll to the top of the page
@@ -28,8 +28,34 @@ export class Contact extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    console.log(this.state);
-    // axios.post('peardesign.co/api/formsubmit', this.state)
+
+    let mailgun = {
+      'baseUrl': 'https://api.mailgun.net/v3/sandbox6e46ac83728b47669523dacda2871ccf.mailgun.org',
+      'domain': 'sandbox6e46ac83728b47669523dacda2871ccf.mailgun.org',
+      'apiKey': '1cfae3921d3715ddbd068c034982c223-1b65790d-37ed367a', 
+    }
+
+    axios({
+      method: 'post',
+      url: `${mailgun.baseUrl}/${mailgun.domain}/messages`,
+      auth: {
+        username: 'api',
+        password: mailgun.apiKey
+      }, 
+      params: {
+        from: this.state.email, 
+        to: 'michael@peargroup.co',
+        subject: `Form Submit: ${this.state.email}`,
+        text: this.state
+      }
+    }).then(
+      response => {
+          console.log(response)
+      },
+      reject => {
+        console.log(reject)
+      }
+    )
   }
 
   render() {
@@ -68,9 +94,9 @@ export class Contact extends Component {
           <div className="you">
             <h2 className="Contact__SectionHeader">Tell us about yourself</h2>
             <div className="you__form">
-              <input className={this.state.name ? 'you__input--selected' : 'you__input--notselected'} placeholder="Name" type="text" name="name" onChange={this.handleChange.bind(this)}/>
-              <input className={this.state.company ? 'you__input--selected' : 'you__input--notselected'} placeholder="Company" type="text" name="company" onChange={this.handleChange.bind(this)}/>
-              <input className={this.state.email ? 'you__input--selected' : 'you__input--notselected'} placeholder="Email" type="email" name="email" onChange={this.handleChange.bind(this)}/>
+              <input className={this.state.name ? 'you__input--selected' : 'you__input--notselected'} placeholder="Name" type="text" name="name" onChange={this.handleChange.bind(this)} required/>
+              <input className={this.state.company ? 'you__input--selected' : 'you__input--notselected'} placeholder="Company" type="text" name="company" onChange={this.handleChange.bind(this)} required/>
+              <input className={this.state.email ? 'you__input--selected' : 'you__input--notselected'} placeholder="Email" type="email" name="email" onChange={this.handleChange.bind(this)} required/>
               <input className={this.state.phone ? 'you__input--selected' : 'you__input--notselected'} placeholder="Phone" type="phone" name="phone" onChange={this.handleChange.bind(this)}/>
             </div>
           </div>

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import projects from '../projectdata';
-import mariFeature from '../assets/images/mari/mariFeature.png';
-import hafFeature from '../assets/images/haf/hafFeature.png';
+import mariFeature from '../assets/images/mari/mari_tile.png';
+import hafFeature from '../assets/images/haf/haf_tile.png';
 
 export class Features extends Component {
   render () {

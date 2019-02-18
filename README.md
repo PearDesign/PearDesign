@@ -1,2 +1,1 @@
-# PearReDesign
-PearDesign site, React
+# PearDesign
